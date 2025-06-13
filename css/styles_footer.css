@@ -1,0 +1,147 @@
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #9ce66c;
+}
+
+.footer-logo {
+  width: 204.607px;
+  height: 114.761px;
+  flex-shrink: 0;
+  aspect-ratio: 204.61/114.76;
+  margin-left: 32px;
+}
+
+#Connect_mxh {
+  margin-right: 10%;
+  margin-left: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Connect_label {
+  color: #000;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0px;
+}
+
+#Connect_text {
+  margin-top: 0px;
+  margin-bottom: 21px;
+}
+
+#logo_mxh {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+#facebook_logo {
+  width: 28.461px;
+  height: 28.461px;
+  flex-shrink: 0;
+  aspect-ratio: 28.46/28.46;
+}
+
+#youtube_logo {
+  width: 40.477px;
+  height: 28.461px;
+  flex-shrink: 0;
+  aspect-ratio: 40.48/28.46;
+}
+
+#instagram_logo {
+  width: 28.461px;
+  height: 26.39px;
+  flex-shrink: 0;
+  aspect-ratio: 28.46/26.39;
+}
+
+#footer_me {
+  margin-left: 5%;
+}
+
+#me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: 0px;
+
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.4;
+  color: #000;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.me_link {
+  display: block;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.contact_link {
+  display: block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+#footer_contact {
+  margin-left: 7%;
+}
+
+#logo_location {
+  width: 15.967px;
+  height: 15.967px;
+  flex-shrink: 0;
+  aspect-ratio: 15.97/15.97;
+}
+
+#logo_phone {
+  width: 15.967px;
+  height: 15.967px;
+  flex-shrink: 0;
+  aspect-ratio: 15.97/15.97;
+}
+
+#logo_mail {
+  width: 15.967px;
+  height: 15.967px;
+  flex-shrink: 0;
+  aspect-ratio: 15.97/15.97;
+}
+
+.footer_icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}

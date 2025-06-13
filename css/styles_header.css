@@ -1,21 +1,11 @@
 .header-container {
   width: 100%;
   height: 80px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  background-color: #9ce66c;
-}
-
-.header-container {
-  width: 100%;
-  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #9ce66c;
 }
-
 
 #logo {
   width: 124.783px;
@@ -75,7 +65,7 @@
 .search-bar {
   display: flex;
   align-items: center;
-  width: 512px;
+  width: 35.56%;
   height: 43px;
   border-radius: 8px;
   border: 1px solid #9d9d9d;
