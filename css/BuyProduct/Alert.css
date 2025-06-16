@@ -1,0 +1,86 @@
+.alert-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alert {
+  width: 400px;
+  height: 200px;
+  border-radius: 12px;
+  background: #fffbea;
+
+  display: flex;
+  flex-direction: column; /* Dàn dọc */
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Cho đẹp bố cục */
+  gap: 10px; /* Khoảng cách giữa icon và chữ */
+}
+
+.alert-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-wrapper {
+  position: relative;
+  width: 65px;
+  height: 65px;
+}
+
+#icon {
+  width: 65px;
+  height: 65px;
+}
+
+#chamthan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 39px;
+  height: 39px;
+  transform: translate(-50%, -50%);
+}
+
+.alert-title {
+  color: #a33;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 0px;
+  letter-spacing: -0.26px;
+}
+
+.alert-text {
+  color: #a33;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 0px;
+  letter-spacing: -0.26px;
+}
+
+.alert-title-sucess {
+  color: #2E7D32;
+text-align: center;
+font-family: Roboto;
+font-size: 26px;
+font-style: normal;
+font-weight: 900;
+line-height: 0px; /* 169.231% */
+letter-spacing: -0.26px;
+}

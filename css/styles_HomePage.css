@@ -1,0 +1,85 @@
+.linehomepage {
+  width: 38.09%;
+  height: 1px;
+
+  background: #000;
+}
+
+#text_ {
+  display: flex;
+  width: 154.996px;
+  height: 39.423px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 66.667% */
+  letter-spacing: 0.5px;
+}
+
+#voucher_text {
+  display: flex;
+  width: 216px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 66.667% */
+  letter-spacing: 0.5px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#flashsale-icon {
+  width: 319.577px;
+  height: 99px;
+  flex-shrink: 0;
+}
+
+#voucher-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96.6%;
+  height: 240px;
+
+  margin: 0 auto 44px auto;
+  border-radius: 8px;
+  background: #b8e997;
+}
+
+/* .voucher-group {
+    
+} */
+
+.voucher-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  width: 550px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+}
