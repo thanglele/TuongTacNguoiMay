@@ -1,4 +1,4 @@
-/* Toàn bộ màn hình nền tối */
+
 .modal-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -97,7 +97,7 @@
 .confirm-button {
   flex: 1;
   padding: 10px 18px;
-  border: 1px solid #00B508;
+  border: 1px solid #9CE66C;
   border-radius: 8px;
   background-color: #AFEC87;
   color: #101828;
