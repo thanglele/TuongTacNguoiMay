@@ -3,13 +3,16 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: #f4f4f4;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
-
 .notification-popup {
   display: flex;
   flex-direction: column;
