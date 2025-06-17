@@ -14,13 +14,13 @@
   position: relative;
   background: #FFF;
   border-radius: 16px;
-  width: 400px;
+  width: 410px;
   padding: 24px 24px 0 24px;
   box-shadow: 0px 20px 24px -4px rgba(10, 13, 18, 0.10),
               0px 8px 8px -4px rgba(10, 13, 18, 0.04);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 /* Nút X */
@@ -52,7 +52,7 @@
 
 .modal-title {
   margin: 0 0 4px 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   font-size: 24px;
   font-weight: 600;
   color: #101828;
@@ -61,12 +61,13 @@
 }
 
 .modal-message {
-  margin: 0;
-  font-family: Roboto, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #535862;
-  line-height: 20px;
+margin: 0;
+color: var(--Gray-600, #535862);
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
 }
 
 
