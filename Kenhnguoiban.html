@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi-vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Garden - Trang chủ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles_HomePage.css" />
+  </head>
+  <body>
+    <!-- Phần Header -->
+    <div id="header"></div>
+    <!-- Phần sidebar -->
+    <div id="sidebar"></div>
+    <!-- Phần Trang chủ chung -->
+     <main> </main>
+    <!-- Phần Footer -->
+    <div id="footer"></div>
+    
+    <script>
+     fetch('./Composite/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+
+      const script = document.createElement("script");
+      script.src = "./js/script_account.js";
+      document.body.appendChild(script);
+    });
+    </script>
+
+    <script>
+    fetch('./Composite/Sidebar.html')
+    .then(res => res.text())
+    .then(data => { 
+      document.getElementById('sidebar').innerHTML = data;
+
+      // Tải script xử lý sidebar sau khi HTML được render xong
+      const script = document.createElement("script");
+      script.src = "./js/scripts_sidebar.js";
+      document.body.appendChild(script);
+    });
+    </script>
+
+    <script src="./js/scipts_Kenhnguoiban.js"></script>
+  </body>
+</html>

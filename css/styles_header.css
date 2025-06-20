@@ -27,12 +27,59 @@
   margin-left: auto;
   margin-right: 30px;
 }
+.account-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 
 #account-icon {
-  width: 30px;
+  cursor: pointer;
+  width: 31px;
   height: 30px;
-  flex-shrink: 0;
-  aspect-ratio: 1/1;
+  fill: #1E5F00;
+}
+
+
+.account-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  width: 160px;
+  z-index: 1000;
+}
+
+
+.account-menu .menu-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+
+.account-menu .menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.header-title {
+  color: #1E5F00;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  text-transform: capitalize;
+  flex: 1;
+  margin: 0 20px;
 }
 
 #wallet-icon {
