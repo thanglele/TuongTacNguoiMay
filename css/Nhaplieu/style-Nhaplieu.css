@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.modal {
+  height: auto;
+  padding: 10px 24px 24px 24px;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 16px;
+  border: 2px solid #000;
+  background: #FFF;
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 2, 0.25);
+  margin: 0 auto;
+  flex-shrink: 0;
+  
+}
+
+.tieu-de {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  padding-bottom: 24px;
+}
+
+.bieu-mau {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+  box-sizing: border-box;
+}
+
+.nhom-truong {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nhom-truong-hinh-anh {
+  align-items: flex-start; /* Phần preview nằm dưới nút tải */
+}
+
+.nhom-truong-hinh-anh label {
+  width: 120px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.o-upload-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.nhom-truong label {
+  width: 180px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  /* gap: 60px; */
+}
+
+.bat-buoc {
+    color: #F00;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.o-nhap { 
+  width: 400px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #FFF;
+  font-size: 16px;
+  font-family: 'Roboto';
+  gap: 60px;
+  
+}
+.o-nhap[readonly] {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.o-danh-muc {
+  width: 400px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background-color: #FFF;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14.296' height='8.655' viewBox='0 0 16 10' fill='none'><path fill-rule='evenodd' clip-rule='evenodd' d='M9.0599 9.06038C8.77865 9.34128 8.3974 9.49906 7.9999 9.49906C7.6024 9.49906 7.22115 9.34128 6.9399 9.06038L1.2819 3.40438C1.00064 3.12298 0.84268 2.74138 0.842773 2.34352C0.842867 1.94567 1.00101 1.56414 1.2824 1.28288C1.56379 1.00162 1.9454 0.843656 2.34325 0.84375C2.74111 0.843844 3.12264 1.00198 3.4039 1.28338L7.9999 5.87938L12.5959 1.28338C12.8787 1.01 13.2575 0.858631 13.6508 0.861862C14.0441 0.865093 14.4204 1.02267 14.6986 1.30065C14.9769 1.57863 15.1348 1.95478 15.1384 2.34807C15.142 2.74137 14.991 3.12035 14.7179 3.40338L9.0609 9.06138L9.0599 9.06038Z' fill='black'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px 8px;
+}
+
+.o-mo-ta {
+  width: 400px;
+  height: 85px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #FFF;
+  padding-left: 2px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  resize: none;
+  flex-shrink: 1;
+  
+}
+
+.tai-anh {
+  width: 60px;
+  height: 18px;
+  
+  border: none;
+  background: #B8E997;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  flex-shrink: 0;
+  
+}
+
+.preview-container {
+  margin-top: 10px;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.preview-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+.hanh-dong {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.nut-luu {
+  width: 60px;
+  height: 40px;
+  background: #B8E997;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+
+.nut-huy {
+  width: 60px;
+  height: 40px;
+  background: #D9D9D9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
