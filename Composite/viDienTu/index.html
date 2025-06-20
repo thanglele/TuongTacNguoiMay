@@ -227,14 +227,21 @@
   window.onload = function () {
     if (!localStorage.getItem("viDaMo")) {
       fetch("../../Composite/E_Wallet/Alert_MoVi_E_Wallet.html")
-        .then(res => res.text())
+        .then(response => response.text())
         .then(html => {
-          const wrapper = document.createElement("div");
-          wrapper.innerHTML = html;
-          document.body.appendChild(wrapper);
+        document.body.insertAdjacentHTML("beforeend", html);
         })
         .catch(err => console.error("Không thể tải thông báo:", err));
     }
+if (localStorage.getItem("thongBaoMoVi") === "true") {
+  fetch("../../Composite/E_Wallet/Alert_MoViThanhCong.html")
+    .then(response => response.text())
+    .then(html => {
+      document.body.insertAdjacentHTML("beforeend", html);
+    })
+    .catch(err => console.error("Không thể tải thông báo:", err));
+    localStorage.setItem("thongBaoMoVi", "false");
+}
   };
 </script>
 
