@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="../../css/BuyProduct/Alert.css" />
+  <link rel="stylesheet" href="../../css/E_Wallet/Alert.css" />
 </head>
 
 <body>
@@ -32,28 +32,33 @@
         </svg>
       </div>
 
-      <div class="alert-content">
-        <p class="alert-title-e">Thông báo</p>
-        <p class="alert-text-e">Bạn cần mở ví để có thể sử dụng các dịch vụ từ ví</p>
+      <div class="alert-overlay">
+    <div class="alert-box">
+      <div class="alert-close" onclick="closeAlert()">×</div>
+      <div class="alert-icon">
+        <div class="circle">
+          <span class="exclam">!</span>
+        </div>
       </div>
-
-      <!-- Nút mở ví -->
-      <div class="alert-button-e" onclick="moViNgay()">
-        <p class="alert-button-text-e">Mở ví ngay</p>
-      </div>
+      <h2 class="alert-title">Thông báo</h2>
+      <p class="alert-message">Bạn cần mở ví để có thể sử dụng các dịch vụ từ ví</p>
+      <button class="alert-button" onclick="moViNgay()">Mở ví ngay</button>
     </div>
   </div>
 
-  <script>
-    function moViNgay() {
-      localStorage.setItem("viDaMo", "true");
-      window.location.href = "MoVi.html";
-    }
+<script>
+  function moViNgay() {
+    // Đánh dấu đã mở ví
+    localStorage.setItem("viDaMo", "true");
+    // Chuyển hướng sang trang mở ví
+    window.location.href = "../viDienTu/MoVi.html";
+  }
 
-    function closeAlert() {
-      const alert = document.querySelector(".alert-background");
-      if (alert) alert.remove();
-    }
-  </script>
+  function closeAlert() {
+    const alert = document.querySelector(".alert-background");
+    if (alert) alert.remove();
+  }
+</script>
+
 </body>
 </html>

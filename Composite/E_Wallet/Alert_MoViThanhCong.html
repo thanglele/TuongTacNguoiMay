@@ -1,37 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet"/>
-    <link rel="stylesheet" href="../../css/E_Wallet/Alert_ThanhCong.css" />
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông báo mở ví thành công</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .wallet-alert {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #e8fff1;
+        border: 1px solid #00c853;
+        border-radius: 10px;
+        padding: 16px 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        z-index: 9999;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
 
-    <div class="alert-background">
-        <div class="alert">
-            <div>
-                <div class="icon-wrapper">
-                    <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
-                        <circle cx="32.5" cy="32.5" r="32.5" fill="#44FF00" fill-opacity="0.26"/>
-                    </svg>
+      .wallet-alert-icon {
+        margin-bottom: 10px;
+      }
 
-                    <svg id="chamthan" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
-                        <path d="M12.4372 16.5002L15.1455 19.2085L21.2393 13.1147M10.1808 5.42131C11.2693 5.33445 12.3027 4.90641 13.1339 4.19813C15.0734 2.54529 17.926 2.54529 19.8655 4.19813C20.6966 4.90641 21.73 5.33445 22.8185 5.42131C25.3587 5.62402 27.3758 7.64113 27.5785 10.1813C27.6654 11.2698 28.0934 12.3032 28.8017 13.1343C30.4546 15.0739 30.4546 17.9265 28.8017 19.866C28.0934 20.6971 27.6654 21.7305 27.5785 22.819C27.3758 25.3592 25.3587 27.3763 22.8185 27.579C21.73 27.6659 20.6966 28.0939 19.8655 28.8022C17.926 30.455 15.0734 30.455 13.1339 28.8022C12.3027 28.0939 11.2693 27.6659 10.1808 27.579C7.64064 27.3763 5.62353 25.3592 5.42082 22.819C5.33396 21.7305 4.90592 20.6971 4.19764 19.866C2.5448 17.9265 2.5448 15.0739 4.19764 13.1343C4.90592 12.3032 5.33396 11.2698 5.42082 10.1813C5.62353 7.64113 7.64064 5.62402 10.1808 5.42131Z" stroke="#00B508" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </div>
-
-            <div class="alert-content">
-                <p class="alert-title-sucess">Chúc mừng bạn đã<br>mở ví thành công</p>
-                <!-- <p class="alert-text">Vui lòng kiểm tra lại số dư ví</p> -->
-            </div>
-        </div>
+      .wallet-alert-text {
+        color: #2e7d32;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wallet-alert" id="wallet-alert">
+      <div class="wallet-alert-icon">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" fill="#00C853" fill-opacity="0.2" />
+          <path
+            d="M9.5 12.5L11 14L14.5 10.5"
+            stroke="#00C853"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <p class="wallet-alert-text">Chúc mừng bạn đã mở<br />ví thành công</p>
     </div>
 
-</body>
+    <script>
+      setTimeout(() => {
+        const alert = document.getElementById("wallet-alert");
+        if (alert) {
+          alert.style.opacity = "0";
+          setTimeout(() => alert.remove(), 500); // chờ hiệu ứng mờ rồi xóa
+          
+        }
+      }, 2500);
+      
+    </script>
+  </body>
 </html>
