@@ -16,6 +16,7 @@
   <body>
     <!-- Phần Header -->
     <div id="header"></div>
+    
     <!-- Phần Trang chủ chung -->
     <main>
       <div id="banner-container">
@@ -212,6 +213,18 @@
     </main>
     <!-- Phần Footer -->
     <div id="footer"></div>
+    
+    <script>
+     fetch('./Composite/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+
+      const script = document.createElement("script");
+      script.src = "./js/script_account.js";
+      document.body.appendChild(script);
+    });
+    </script>
 
     <script src="../js/scipts_HomePage.js"></script>
   </body>

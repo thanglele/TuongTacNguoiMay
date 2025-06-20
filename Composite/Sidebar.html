@@ -1,0 +1,30 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.-Sidebar.css">
+<body>
+  <div class="main-container">
+  <aside class="sidebar">
+    <div class="shop-info">
+      <div class="shop-avatar">🏪</div>
+      <div class="shop-name">Shop nhà Quang</div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-item active" onclick="showContent('product')">Quản lý sản phẩm</div>
+      <div class="menu-item" onclick="showContent('invoice')">Quản lý hóa đơn</div>
+    </nav>
+  </aside>
+
+  <div class="content">
+    <div id="product" class="content-section active-section">
+      <h2>Trang quản lý sản phẩm</h2>
+      <p>Hiển thị danh sách sản phẩm ở đây...</p>
+    </div>
+    <div id="invoice" class="content-section">
+      <h2>Trang quản lý hóa đơn</h2>
+      <p>Hiển thị danh sách hóa đơn ở đây...</p>
+    </div>
+  </div>
+</div>
+</body>

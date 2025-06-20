@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 202px;
+  background: #9CE66C;
+  border-radius: 0px 8px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 0px;
+  position: relative;
+}
+
+/* Shop Info */
+.shop-info {
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+.shop-avatar {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.shop-name {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.menu-item {
+  width: 180px;
+  height: 35px;
+  border-radius: 0px 8px 8px 0px;
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  box-sizing: border-box;
+  
+  /* Animation properties */
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 1px solid transparent;
+  
+  /* Trạng thái ban đầu - KHÔNG lồi ra */
+  transform: translateX(0px);
+}
+
+/* Hover effect - chỉ áp dụng khi KHÔNG có class active */
+.menu-item:hover:not(.active) {
+  transform: translateX(5px);
+  background: #f0f8ff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* QUAN TRỌNG: Active state - Menu được chọn SẼ LỒI RA */
+.menu-item.active {
+  font-weight: 600;
+  border: 1px solid #9CE66C;
+  background: #FFF;
+  
+  /* ĐÂY LÀ PHẦN QUAN TRỌNG - LỒI RA BÊN PHẢI */
+  transform: translateX(15px) !important;
+  
+  box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Đảm bảo menu active không bị thay đổi khi hover */
+.menu-item.active:hover {
+  transform: translateX(15px) !important;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 40px;
+  background: #fafafa;
+}
+
+/* Content Sections */
+.content-section {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.content-section.active-section {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+
+/* Animation cho content */
+@keyframes slideInContent {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling cho content */
+.content h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.content p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
