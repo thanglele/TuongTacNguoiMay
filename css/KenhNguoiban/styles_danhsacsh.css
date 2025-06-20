@@ -1,0 +1,99 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f8f8f8;
+}
+
+.khoi-danh-sach {
+  width: 1160px;
+  background: #B8E997;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.thanh-tim-kiem-wrapper {
+  position: relative;
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.thanh-tim-kiem {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #9D9D9D;
+  background: #FFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  color: #9D9D9D;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50px;
+  padding: 0 40px 0 15px; /* chừa chỗ bên phải cho icon */
+  box-sizing: border-box;
+}
+
+.tim-kiem-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+
+.danh-muc,
+.trang-thai,
+.gia-ban {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.danh-muc select,
+.trang-thai select,
+.gia-ban input {
+  height: 32px;
+  width: 120px;
+  border: 1px solid #9CE66C;
+  border-radius: 8px;
+  background: #FFF;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+.gia-ban input::placeholder {
+  color: #9D9D9D;
+}
+
+.chon-ngay {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chon-ngay label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ngay-row {
+  display: flex;
+  gap: 6px;
+}
+
+.ngay-row input[type="date"] {
+  width: 100px;
+  height: 28px;
+  border: 1px solid #B8E997;
+  border-radius: 4px;
+  background: #FFF;
+  padding: 2px 6px;
+  font-size: 13px;
+}

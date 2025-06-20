@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header và footer luôn full width */
+.thanh-dau-trang,
+.chan-trang {
+  width: 100%;
+}
+
+/* Bố cục 2 cột */
+.bo-cuc-hai-cot {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 100px); /* tuỳ chiều cao header/footer */
+}
+
+/* Sidebar luôn nằm sát trái */
+.cot-ben-trai {
+
+  width: 200px;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+  position: relative;
+}
+
+/* Cột nội dung nằm bên phải */
+.cot-ben-phai {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Breadcrumb */
+.khoi-duong-dan {
+  margin-bottom: 15px;
+}
+
+/* Nội dung chính */
+.khoi-noi-dung {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  min-height: 300px;
+}

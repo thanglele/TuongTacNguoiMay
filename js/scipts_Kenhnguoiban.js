@@ -1,2 +1,2 @@
-fetch('../Composite/header_Kenhnguoiban.html').then(response => response.text()).then(data => {document.getElementById('header').innerHTML = data;});
+fetch('../Composite//KenhNguoiban/header_Kenhnguoiban.html').then(response => response.text()).then(data => {document.getElementById('header').innerHTML = data;});
 fetch('../Composite/footer.html').then(response => response.text()).then(data => {document.getElementById('footer').innerHTML = data;});

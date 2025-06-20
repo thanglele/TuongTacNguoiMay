@@ -11,20 +11,36 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles_HomePage.css" />
+    <link rel="stylesheet" href="./css/style_Kenhnguoiban.css" />
   </head>
   <body>
-    <!-- Phần Header -->
-    <div id="header"></div>
-    <!-- Phần sidebar -->
-    <div id="sidebar"></div>
-    <!-- Phần Trang chủ chung -->
-     <main> </main>
-    <!-- Phần Footer -->
-    <div id="footer"></div>
-    
+    <!-- Header -->
+  <div class="thanh-dau-trang" id="header"></div>
+
+  
+  <div class="bo-cuc-hai-cot">
+    <!-- Sidebar bên trái -->
+    <aside class="cot-ben-trai" id="sidebar"></aside>
+
+    <!-- Nội dung bên phải -->
+    <div class="cot-ben-phai">
+      <!-- Breadcrumb -->
+      <div class="khoi-duong-dan" id="duongdan"></div>
+      <div id="timkiem"></div>
+
+
+      <!-- Nội dung chính -->
+      <main class="khoi-noi-dung">
+        <!-- Nội dung -->
+         cc
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="chan-trang" id="footer"></div>
     <script>
-     fetch('./Composite/header.html')
+     fetch('./Composite/KenhNguoiban/header_Kenhnguoiban.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header').innerHTML = data;
@@ -34,9 +50,21 @@
       document.body.appendChild(script);
     });
     </script>
+    
+    <script>
+     fetch('./Composite/KenhNguoiban/khoitimkiem.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('timkiem').innerHTML = data;
+
+      const script = document.createElement("script");
+      script.src = "./js/Timkiem.js";
+      document.body.appendChild(script);
+    });
+    </script>
 
     <script>
-    fetch('./Composite/Sidebar.html')
+    fetch('./Composite/KenhNguoiban/Sidebar.html')
     .then(res => res.text())
     .then(data => { 
       document.getElementById('sidebar').innerHTML = data;
@@ -44,6 +72,18 @@
       // Tải script xử lý sidebar sau khi HTML được render xong
       const script = document.createElement("script");
       script.src = "./js/scripts_sidebar.js";
+      document.body.appendChild(script);
+    });
+    </script>
+
+    <script>
+     fetch('./Composite/KenhNguoiban/Duongdan.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('duongdan').innerHTML = data;
+
+      const script = document.createElement("script");
+      script.src = "./js/Duongdan.js";
       document.body.appendChild(script);
     });
     </script>
