@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thông báo mở ví</title>
+
+  <!-- Font và CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../../css/BuyProduct/Alert.css" />
 </head>
+
 <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet"/>
-    <link rel="stylesheet" href="../../css/BuyProduct/Alert.css" />
+  <div class="alert-background">
+    <div class="alert-e">
+      <!-- Nút tắt -->
+      <svg id="alert-icon-x" onclick="closeAlert()" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none" style="cursor: pointer;">
+        <g clip-path="url(#clip0_347_4913)">
+          <path d="M4.98092 29.0189C3.35724 27.4507...Z" fill="black"/>
+        </g>
+        <defs><clipPath id="clip0_347_4913"><rect width="34" height="34" fill="white"/></clipPath></defs>
+      </svg>
 
-    <div class="alert-background">
-        <div class="alert-e">
-            <svg id="alert-icon-x" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                <g clip-path="url(#clip0_347_4913)">
-                    <path d="M4.98092 29.0189C3.35724 27.4507 2.06214 25.5749 1.17119 23.5008C0.280238 21.4267 -0.188728 19.196 -0.208343 16.9387C-0.227957 14.6815 0.202172 12.4429 1.05695 10.3537C1.91172 8.26446 3.17402 6.36638 4.7702 4.7702C6.36638 3.17402 8.26446 1.91172 10.3537 1.05695C12.4429 0.202172 14.6815 -0.227957 16.9387 -0.208343C19.196 -0.188728 21.4267 0.280238 23.5008 1.17119C25.5749 2.06214 27.4507 3.35724 29.0189 4.98092C32.1156 8.18715 33.8291 12.4814 33.7904 16.9387C33.7516 21.3961 31.9638 25.6599 28.8118 28.8118C25.6599 31.9638 21.3961 33.7516 16.9387 33.7904C12.4814 33.8291 8.18715 32.1156 4.98092 29.0189ZM7.37792 26.6219C9.92983 29.1738 13.391 30.6075 16.9999 30.6075C20.6089 30.6075 24.07 29.1738 26.6219 26.6219C29.1738 24.07 30.6075 20.6089 30.6075 16.9999C30.6075 13.391 29.1738 9.92983 26.6219 7.37792C24.07 4.826 20.6089 3.39235 16.9999 3.39235C13.391 3.39235 9.92983 4.826 7.37792 7.37792C4.826 9.92983 3.39235 13.391 3.39235 16.9999C3.39235 20.6089 4.826 24.07 7.37792 26.6219ZM24.2079 12.1889L19.3969 16.9999L24.2079 21.8109L21.8109 24.2079L16.9999 19.3969L12.1889 24.2079L9.79192 21.8109L14.6029 16.9999L9.79192 12.1889L12.1889 9.79192L16.9999 14.6029L21.8109 9.79192L24.2079 12.1889Z" fill="black"/>
-                </g>
-                <defs>
-                    <clipPath id="clip0_347_4913">
-                    <rect width="34" height="34" fill="white"/>
-                    </clipPath>
-                </defs>
-            </svg>
+      <div class="icon-wrapper">
+        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+          <circle cx="32.5" cy="32.5" r="32.5" fill="#FF2F00" fill-opacity="0.26" />
+        </svg>
+        <svg id="chamthan" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+          <path d="M19.4998 3.70166C10.7789 3.70166...Z" fill="#FF0000"/>
+        </svg>
+      </div>
 
-            <div>
-                <div class="icon-wrapper">
-                    <svg id="icon"xmlns="http://www.w3.org/2000/svg"width="65"height="65"viewBox="0 0 65 65"fill="none"><circle cx="32.5" cy="32.5" r="32.5" fill="#FF2F00" fill-opacity="0.26" />
-                    </svg>
-                    <svg id="chamthan" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
-                        <path d="M19.4998 3.70166C10.7789 3.70166 3.70117 10.7794 3.70117 19.5003C3.70117 28.2211 10.7789 35.2989 19.4998 35.2989C28.2206 35.2989 35.2984 28.2211 35.2984 19.5003C35.2984 10.7794 28.2206 3.70166 19.4998 3.70166ZM21.0796 27.3996H17.9199V24.2399H21.0796V27.3996ZM21.0796 21.0801H17.9199V11.601H21.0796V21.0801Z" fill="#FF0000"/>
-                    </svg>
-                </div>
-            </div>
+      <div class="alert-content">
+        <p class="alert-title-e">Thông báo</p>
+        <p class="alert-text-e">Bạn cần mở ví để có thể sử dụng các dịch vụ từ ví</p>
+      </div>
 
-            <div class="alert-content">
-                <p class="alert-title-e">Thông báo</p>
-                <p class="alert-text-e">Bạn cần mở ví để có thể sử dụng các dịch vụ từ ví</p>
-            </div>
-
-            <div class="alert-button-e">
-                <p class="alert-button-text-e">Mở ví ngay</p>
-            </div>
-        </div>
+      <!-- Nút mở ví -->
+      <div class="alert-button-e" onclick="moViNgay()">
+        <p class="alert-button-text-e">Mở ví ngay</p>
+      </div>
     </div>
+  </div>
+
+  <script>
+    function moViNgay() {
+      localStorage.setItem("viDaMo", "true");
+      window.location.href = "MoVi.html";
+    }
+
+    function closeAlert() {
+      const alert = document.querySelector(".alert-background");
+      if (alert) alert.remove();
+    }
+  </script>
 </body>
 </html>

@@ -223,5 +223,20 @@
     <script>
       fetch('../footer.html').then(response => response.text()).then(data => {document.getElementById('footer').innerHTML = data;});
     </script>
+    <script>
+  window.onload = function () {
+    if (!localStorage.getItem("viDaMo")) {
+      fetch("../../Composite/E_Wallet/Alert_MoVi_E_Wallet.html")
+        .then(res => res.text())
+        .then(html => {
+          const wrapper = document.createElement("div");
+          wrapper.innerHTML = html;
+          document.body.appendChild(wrapper);
+        })
+        .catch(err => console.error("Không thể tải thông báo:", err));
+    }
+  };
+</script>
+
 </body>
 </html>
