@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi-vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý vận đơn</title>
+    <link rel="stylesheet" href="/css/Shipping/styles-Shipping.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <div class="navigate-container">
+        <p class="navigate-item" style="margin-left: 2.81%">Trang chủ</p>
+        <p
+          class="navigate-item"
+          style="margin-left: 1.09%; margin-right: 1.09%"
+        >
+          >
+        </p>
+        <p class="navigate-item" style="margin-right: auto">Quản lý vận đơn</p>
+
+        <button
+          style="
+            width: 17.17%;
+            height: 36px;
+            border-radius: 8px;
+            border: 1px solid #e0bb65;
+            background: #dad5c8;
+            margin-right: 1%;
+          "
+        >
+          <div class="autoControl">
+            <svg
+              id="tick-autoControl"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                d="M12.4997 2.08301C6.77051 2.08301 2.08301 6.77051 2.08301 12.4997C2.08301 18.2288 6.77051 22.9163 12.4997 22.9163C18.2288 22.9163 22.9163 18.2288 22.9163 12.4997C22.9163 6.77051 18.2288 2.08301 12.4997 2.08301ZM10.4163 17.708L5.20801 12.4997L6.67676 11.0309L10.4163 14.7601L18.3226 6.85384L19.7913 8.33301L10.4163 17.708Z"
+                fill="#9AD930"
+              />
+            </svg>
+            <p id="label_autoControl">Tự động điều phối</p>
+          </div>
+        </button>
+      </div>
+
+      <div class="table-container">
+        <table class="table">
+          <tr>
+            <th class="table-content-header">Mã đơn hàng</th>
+            <th class="table-content-header">Địa chỉ người bán</th>
+            <th class="table-content-header">Địa chỉ người mua</th>
+            <th class="table-content-header">Tiền thu</th>
+            <th class="table-content-header">Đơn vị vận chuyển</th>
+            <th class="table-content-header">Trạng thái</th>
+            <th class="table-content-header">Thanh toán</th>
+            <th class="table-content-header">Thời điểm đặt hàng</th>
+            <th class="table-content-header">Thao tác</th>
+          </tr>
+          <tr>
+            <td class="table-content-item">DH0001</td>
+            <td class="table-content-item">Hà Nội</td>
+            <td class="table-content-item">Hồ Chí Minh</td>
+            <td class="table-content-item">1.000.000đ</td>
+            <td class="table-content-item">Giao hàng nhanh</td>
+            <td class="table-content-item">Đang giao hàng</td>
+            <td class="table-content-item"><div id="unpaid"></div></td>
+            <td class="table-content-item">01/01/2023 10:00</td>
+            <td class="table-content-item">
+                <div id="action-button" class="action-button"></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-content-item">DH0002</td>
+            <td class="table-content-item">Hà Nội</td>
+            <td class="table-content-item">Hồ Chí Minh</td>
+            <td class="table-content-item">0đ</td>
+            <td class="table-content-item">Be Delivery</td>
+            <td class="table-content-item">Chưa giao hàng</td>
+            <td class="table-content-item"><div id="paid"></div></td>
+            <td class="table-content-item">01/01/2023 10:00</td>
+            <td class="table-content-item">
+                <div id="action-button" class="action-button"></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-content-item">DH0003</td>
+            <td class="table-content-item">Hà Nội</td>
+            <td class="table-content-item">Hồ Chí Minh</td>
+            <td class="table-content-item">0đ</td>
+            <td class="table-content-item">Be Delivery</td>
+            <td class="table-content-item">Chưa giao hàng</td>
+            <td class="table-content-item"><div id="paid"></div></td>
+            <td class="table-content-item">01/01/2023 10:00</td>
+            <td class="table-content-item">
+                <div id="action-button" class="action-button"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/js/scipts_Shipping.js"></script>
+  </body>
+</html>

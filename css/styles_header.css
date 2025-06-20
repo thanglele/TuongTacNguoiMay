@@ -92,3 +92,38 @@
   background: transparent;
   box-sizing: border-box;
 }
+
+.label-dashboard {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+
+  margin-left: 1.39%;
+  margin-right: auto;
+}
+
+.paid-back {
+  display: flex;
+  height: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.paid-label {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  margin: auto;
+}
