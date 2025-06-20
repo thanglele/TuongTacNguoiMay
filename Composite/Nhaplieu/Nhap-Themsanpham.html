@@ -1,0 +1,63 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet"/>
+<link rel="stylesheet" href="../../css/Nhaplieu/style-Nhaplieu.css" />
+  <body>
+    <div class="overlay">
+      <div class="modal">
+        <div class="tieu-de">Thêm sản phẩm</div>
+        <form class="bieu-mau">
+        
+        <div class="nhom-truong">
+          <label for="ten-san-pham">Tên sản phẩm<span class="bat-buoc">*</span></label>
+          <input type="text" id="ten-san-pham" class="o-nhap">
+        </div>
+
+        <div class="nhom-truong">
+          <label for="gia-ban">Giá bán<span class="bat-buoc">*</span></label>
+          <input type="number" id="gia-ban" class="o-nhap">
+        </div>
+
+        <div class="nhom-truong">
+          <label for="danh-muc">Danh mục<span class="bat-buoc">*</span></label>
+          <select id="danh-muc" name="danh-muc" class="o-danh-muc">
+          <option value="">-- Chọn danh mục --</option>
+          <option value="gao">Gạo</option>
+          <option value="hat-dinh-duong">Hạt dinh dưỡng</option>
+          <option value="thao-moc">Thảo mộc</option>
+          <option value="tinh-bot">Tinh bột</option>
+          <option value="che-thanh-nhiet">Chè thanh nhiệt</option>
+          <option value="hoa-kho">Hoa khô</option>
+          </select>
+        </div>
+
+        <div class="nhom-truong">
+          <label for="so-luong">Số lượng tồn kho<span class="bat-buoc">*</span></label>
+          <input type="number" id="so-luong" class="o-nhap">
+        </div>
+
+        <div class="nhom-truong">
+          <label for="mo-ta">Mô tả sản phẩm<span class="bat-buoc">*</span></label>
+          <textarea id="mo-ta" class="o-mo-ta"></textarea>
+        </div>
+
+      <div class="nhom-truong nhom-truong-hinh-anh">
+    <label for="hinh-anh">Hình ảnh sản phẩm<span class="bat-buoc">*</span></label>
+    
+    <div class="o-upload-wrapper">
+      <input type="file" id="hinh-anh" accept=".png, .jpg, .jpeg" style="display: none;">
+      <label for="hinh-anh" class="tai-anh">Tải ảnh lên</label>
+      
+      <div class="preview-container" id="previewContainer"></div>
+    </div>
+  </div>
+
+        <div class="hanh-dong">
+          <button type="submit" class="nut-luu">Lưu</button>
+          <button type="button" class="nut-huy">Hủy</button>
+              </div>
+          </form>
+      </div>
+    </div>
+  </body>
+  
