@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ví Điện Tử - Nạp Tiền</title>
+    <link rel="stylesheet" href="../../css/viDienTu/styles_NapTien.css" />
+    <link rel="stylesheet" href="../../css/styles_header.css" />
+    <link rel="stylesheet" href="../../css/styles_footer.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="header"></div>
+      <div class="breadcrumb-container">
+        <div class="breadcrumb">
+          <a href="../../index.html" class="link">Trang chủ</a>
+          <span class="divider">&gt;</span>
+          <a href="./index.html" class="link">Ví Điện Tử</a>
+          <span class="divider">&gt;</span>
+          <span class="link current">Nạp tiền</span>
+        </div>
+      </div>
+      
+
+      <div id="footer"></div>
+    </div>
+
+    <script>
+      // Load header.html
+      fetch("../header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <script>
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
