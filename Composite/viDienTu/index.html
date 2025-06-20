@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ví Điện Tử</title>
+  <link rel="stylesheet" href="../../css/viDienTu/styles_index.css" />
+  <link rel="stylesheet" href="../../css/styles_header.css">
+  <link rel="stylesheet" href="../../css/styles_footer.css">
+</head>
+<body>
+<div class="main-container" >
+  <div id="header"></div>
+  <div class="breadcrumb-container">
+    <div class="breadcrumb">
+        <a href="../../index.html" class="link">Trang chủ</a>
+        <span class="divider">&gt;</span>
+        <span class="link current">Ví điện tử</span>
+    </div>
+  </div>
+  <div class="wallet-container">
+    <!-- Profile box -->
+    <div class="profile-box">
+      <img src="../../img/Avatar/62ooioii.svg" alt="Avatar" />
+      <div class="profile-info">
+        <div class="name">Trần Hồng Quang</div>
+        <div class="balance">Số dư:
+            <span id="balance-amount">0</span>
+            <!-- SVG icon eye -->
+            <div id="eye-icon" class="eye-icon" title="Ẩn số dư">
+                <svg id="eye-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M11.932 9.51657C12.7231 9.51657 13.4819 9.83085 14.0413 10.3903C14.6008 10.9497 14.915 11.7085 14.915 12.4996C14.915 13.2908 14.6008 14.0495 14.0413 14.609C13.4819 15.1684 12.7231 15.4827 11.932 15.4827C11.1408 15.4827 10.3821 15.1684 9.82266 14.609C9.26323 14.0495 8.94894 13.2908 8.94894 12.4996C8.94894 11.7085 9.26323 10.9497 9.82266 10.3903C10.3821 9.83085 11.1408 9.51657 11.932 9.51657ZM11.932 5.04199C16.9037 5.04199 21.1496 8.13442 22.8698 12.4996C21.1496 16.8648 16.9037 19.9572 11.932 19.9572C6.96024 19.9572 2.71437 16.8648 0.994141 12.4996C2.71437 8.13442 6.96024 5.04199 11.932 5.04199ZM3.16182 12.4996C3.96551 14.1406 5.21347 15.5232 6.76384 16.4902C8.3142 17.4572 10.1048 17.9699 11.932 17.9699C13.7592 17.9699 15.5498 17.4572 17.1001 16.4902C18.6505 15.5232 19.8985 14.1406 20.7022 12.4996C19.8985 10.8586 18.6505 9.47605 17.1001 8.50904C15.5498 7.54203 13.7592 7.02938 11.932 7.02938C10.1048 7.02938 8.3142 7.54203 6.76384 8.50904C5.21347 9.47605 3.96551 10.8586 3.16182 12.4996Z" fill="black"/>
+                </svg>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+    <!-- Wallet Actions -->
+    <div class="wallet-actions">
+      <div class="action-item">
+        <button onclick="window.location.href='NapTien.html'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+            <path d="M5.80814 0V5.80814H0V9.68024H5.80814V15.4884H9.68023V9.68024H15.4884V5.80814H9.68023V0H5.80814ZM17.4244 5.80814V11.6163H11.6163V17.4244H5.80814V36.7849C5.80814 37.8118 6.21609 38.7967 6.94225 39.5229C7.66841 40.249 8.65329 40.657 9.68023 40.657H36.7849C38.9339 40.657 40.657 38.9339 40.657 36.7849V34.8489H23.2326C22.2056 34.8489 21.2207 34.4409 20.4946 33.7147C19.7684 32.9886 19.3605 32.0037 19.3605 30.9768V15.4884C19.3605 14.4614 19.7684 13.4766 20.4946 12.7504C21.2207 12.0242 22.2056 11.6163 23.2326 11.6163H40.657V9.68024C40.657 8.65329 40.249 7.66841 39.5229 6.94225C38.7967 6.21609 37.8118 5.80814 36.7849 5.80814H17.4244ZM23.2326 15.4884V30.9768H42.593V15.4884H23.2326ZM30.9768 20.3285C32.5837 20.3285 33.8808 21.6256 33.8808 23.2326C33.8808 24.8395 32.5837 26.1366 30.9768 26.1366C29.3698 26.1366 28.0727 24.8395 28.0727 23.2326C28.0727 21.6256 29.3698 20.3285 30.9768 20.3285Z" fill="black"/>
+          </svg>
+          <div class="action-label">Nạp tiền vào ví</div>
+        </button>
+      </div>
+      <div class="action-item">
+        <button onclick="window.location.href='RutTien.html'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9209 28.583C21.9209 26.9586 22.5662 25.4006 23.7149 24.252C24.8635 23.1033 26.4214 22.458 28.0459 22.458H36.2126C37.2955 22.458 38.3341 22.8882 39.0999 23.654C39.8657 24.4198 40.2959 25.4584 40.2959 26.5413V30.6247C40.2959 31.7076 39.8657 32.7463 39.0999 33.512C38.3341 34.2778 37.2955 34.708 36.2126 34.708H28.0459C26.4214 34.708 24.8635 34.0627 23.7149 32.914C22.5662 31.7654 21.9209 30.2075 21.9209 28.583ZM28.0459 26.5413C27.5044 26.5413 26.9851 26.7564 26.6022 27.1393C26.2193 27.5222 26.0042 28.0415 26.0042 28.583C26.0042 29.1245 26.2193 29.6438 26.6022 30.0267C26.9851 30.4096 27.5044 30.6247 28.0459 30.6247H36.2126V26.5413H28.0459Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0982 6.72277C25.4811 6.34002 26.0003 6.125 26.5417 6.125C27.083 6.125 27.6023 6.34002 27.9851 6.72277L33.5119 12.2496H27.7381L25.0982 9.60969C24.7155 9.22682 24.5004 8.70761 24.5004 8.16623C24.5004 7.62485 24.7155 7.10564 25.0982 6.72277ZM25.3452 12.2496L19.8185 6.72277C19.4356 6.34002 18.9164 6.125 18.375 6.125C17.8336 6.125 17.3144 6.34002 16.9315 6.72277L11.4048 12.2496H25.3452ZM9.36308 14.2912L9.24875 14.4035C8.35799 14.6189 7.56556 15.1276 6.99897 15.8479C6.43237 16.5682 6.12454 17.4581 6.125 18.3746V38.7912C6.125 39.8742 6.55521 40.9128 7.32098 41.6786C8.08675 42.4444 9.12537 42.8746 10.2083 42.8746H34.7083C35.7913 42.8746 36.8299 42.4444 37.5957 41.6786C38.3615 40.9128 38.7917 39.8742 38.7917 38.7912H30.625C27.9176 38.7912 25.3211 37.7157 23.4066 35.8013C21.4922 33.8868 20.4167 31.2903 20.4167 28.5829C20.4167 25.8755 21.4922 23.2789 23.4066 21.3645C25.3211 19.4501 27.9176 18.3746 30.625 18.3746H38.7917C38.7921 17.4581 38.4843 16.5682 37.9177 15.8479C37.3511 15.1276 36.5587 14.6189 35.6679 14.4035L35.5536 14.2912H9.36308Z" fill="black"/>
+          </svg>
+          <div class="action-label">Rút tiền từ ví</div>
+        </button>
+      </div>
+      <div class="action-item">
+        <button onclick="window.location.href='LichSuGiaoDich.html'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+            <path d="M32.9158 6.46741C35.8362 8.15361 38.2656 10.5733 39.9634 13.4869C41.6613 16.4005 42.5687 19.7071 42.596 23.0792C42.6232 26.4513 41.7693 29.772 40.1187 32.7127C38.4681 35.6534 36.0782 38.112 33.1854 39.8451C30.2927 41.5783 26.9974 42.5259 23.6259 42.5941C20.2544 42.6623 16.9235 41.8488 13.9629 40.2342C11.0024 38.6195 8.51495 36.2596 6.74676 33.3881C4.97856 30.5166 3.99097 27.2331 3.88175 23.8627L3.87207 23.2353L3.88175 22.608C3.99019 19.2641 4.96324 16.0053 6.70604 13.1494C8.44885 10.2935 10.9019 7.9379 13.8261 6.31229C16.7503 4.68667 20.0459 3.8465 23.3914 3.87369C26.737 3.90087 30.0184 4.79449 32.9158 6.46741ZM23.2346 11.6178C22.7603 11.6179 22.3026 11.792 21.9482 12.1072C21.5938 12.4223 21.3674 12.8566 21.3119 13.3275L21.2983 13.5541V23.2353L21.3157 23.489C21.3599 23.8249 21.4914 24.1434 21.6972 24.4126L21.8656 24.6062L27.6744 30.415L27.8564 30.5737C28.196 30.8372 28.6135 30.9802 29.0433 30.9802C29.4731 30.9802 29.8907 30.8372 30.2302 30.5737L30.4123 30.413L30.573 30.231C30.8364 29.8914 30.9794 29.4739 30.9794 29.0441C30.9794 28.6143 30.8364 28.1967 30.573 27.8572L30.4123 27.6752L25.1708 22.4318V13.5541L25.1573 13.3275C25.1018 12.8566 24.8754 12.4223 24.521 12.1072C24.1666 11.792 23.7088 11.6179 23.2346 11.6178Z" fill="black"/>
+          </svg>
+          <div class="action-label">Lịch sử giao dịch</div>
+        </button>
+      </div>
+      <div class="action-item">
+        <button onclick="alert('Ưu đãi')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+            <path d="M7.74457 7.74512C6.71752 7.74512 5.73253 8.15311 5.0063 8.87935C4.28006 9.60558 3.87207 10.5906 3.87207 11.6176V19.3626C4.89912 19.3626 5.88411 19.7706 6.61034 20.4968C7.33658 21.2231 7.74457 22.2081 7.74457 23.2351C7.74457 24.2622 7.33658 25.2472 6.61034 25.9734C5.88411 26.6996 4.89912 27.1076 3.87207 27.1076V34.8526C3.87207 35.8797 4.28006 36.8647 5.0063 37.5909C5.73253 38.3171 6.71752 38.7251 7.74457 38.7251H38.7246C39.7516 38.7251 40.7366 38.3171 41.4628 37.5909C42.1891 36.8647 42.5971 35.8797 42.5971 34.8526V27.1076C41.57 27.1076 40.585 26.6996 39.8588 25.9734C39.1326 25.2472 38.7246 24.2622 38.7246 23.2351C38.7246 22.2081 39.1326 21.2231 39.8588 20.4968C40.585 19.7706 41.57 19.3626 42.5971 19.3626V11.6176C42.5971 10.5906 42.1891 9.60558 41.4628 8.87935C40.7366 8.15311 39.7516 7.74512 38.7246 7.74512H7.74457ZM30.0114 13.5539L32.9158 16.4582L16.4577 32.9164L13.5533 30.012L30.0114 13.5539ZM17.0579 13.6313C18.9555 13.6313 20.4851 15.161 20.4851 17.0585C20.4851 17.9674 20.124 18.8391 19.4813 19.4818C18.8386 20.1246 17.9669 20.4856 17.0579 20.4856C15.1604 20.4856 13.6308 18.956 13.6308 17.0585C13.6308 16.1495 13.9918 15.2778 14.6346 14.6351C15.2773 13.9924 16.149 13.6313 17.0579 13.6313ZM29.4112 25.9846C31.3087 25.9846 32.8384 27.5142 32.8384 29.4118C32.8384 30.3207 32.4773 31.1924 31.8346 31.8351C31.1919 32.4778 30.3201 32.8389 29.4112 32.8389C27.5137 32.8389 25.984 31.3093 25.984 29.4118C25.984 28.5028 26.3451 27.6311 26.9878 26.9884C27.6306 26.3457 28.5023 25.9846 29.4112 25.9846Z" fill="black"/>
+          </svg>
+          <div class="action-label">Ưu đãi</div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="voucher-container">
+    <div class="voucher-group">
+        <div class="voucher-item">
+            <img src="./img/Home_Page/Coupon1.svg" alt="Coupon 1" class="voucher-image">
+            <div>
+            <p class="voucher-title">Coupon1</p>
+            <p class="voucher-description">Giảm 5K cho đơn từ 149K</p>
+            <p class="voucher-exp">HSD: 10/7/2025</p>
+            </div>
+            <button id="save-voucher">LƯU</button>
+        </div>
+        <div class="voucher-item">
+            <img src="./img/Home_Page/Coupon2.svg" alt="Coupon 2" class="voucher-image">
+            <div>
+            <p class="voucher-title">Coupon2</p>
+            <p class="voucher-description">Giảm 10K cho đơn từ 199K</p>
+            <p class="voucher-exp">HSD: 10/7/2025</p>
+            </div>
+            <button id="save-voucher">LƯU</button>
+        </div>
+    </div>
+
+    <div class="voucher-group">
+        <div class="voucher-item">
+            <img src="./img/Home_Page/Coupon3.svg" alt="Coupon 3" class="voucher-image">
+            <div>
+            <p class="voucher-title">Coupon3</p>
+            <p class="voucher-description">Giảm 50K cho đơn từ 449K</p>
+            <p class="voucher-exp">HSD: 10/7/2025</p>
+            </div>
+            <button id="save-voucher">LƯU</button>
+        </div>
+        
+        <div class="voucher-item">
+            <img src="../../img/Home_Page/Coupon4.svg" alt="Coupon 4" class="voucher-image">
+            <div>
+            <p class="voucher-title">Coupon4</p>
+            <p class="voucher-description">Giảm 15K cho đơn từ 249K</p>
+            <p class="voucher-exp">HSD: 10/7/2025</p>
+            </div>
+            <button id="save-voucher">LƯU</button>
+        </div>
+    </div>
+    </div>
+    <div class="suggested-header">
+        <div class="line"></div>
+        <p class="suggested-heading-text">Gợi ý cho bạn</p>
+        <div class="line"></div>
+    </div>
+    <div id="suggested-container">
+        
+
+    <div class="suggested-item">
+        <img src="../../img/Home_Page/suggested/namhuong2.svg" alt="Nấm hương" class="suggested-img">
+        <p class="suggested-title">Nấm hương</p>
+        <div class="suggested-cost">
+        <svg class="suggested-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+            <path d="..." fill="#FF6B00"/>
+        </svg>
+        <p class="NewCost">95.000 đ</p>
+        <p class="OldCost">150.000 đ</p>
+        </div>
+    </div>
+
+    <div class="suggested-item">
+        <img src="../../img/Home_Page/suggested/hanhnhan2.svg" alt="Hạnh nhân" class="suggested-img">
+        <p class="suggested-title">Hạnh nhân</p>
+        <div class="suggested-cost">
+        <svg class="suggested-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+            <path d="..." fill="#FF6B00"/>
+        </svg>
+        <p class="NewCost">95.000 đ</p>
+        <p class="OldCost">150.000 đ</p>
+        </div>
+    </div>
+
+    <div class="suggested-item">
+        <img src="../../img/Home_Page/suggested/Kytu2.svg" alt="Kỷ tử" class="suggested-img">
+        <p class="suggested-title">Kỷ tử</p>
+        <div class="suggested-cost">
+        <svg class="suggested-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+            <path d="..." fill="#FF6B00"/>
+        </svg>
+        <p class="NewCost">95.000 đ</p>
+        <p class="OldCost">150.000 đ</p>
+        </div>
+    </div>
+
+    <div class="suggested-item">
+        <img src="../../img/Home_Page/suggested/Gao2.svg" alt="Gạo ST25" class="suggested-img">
+        <p class="suggested-title">Gạo ST25</p>
+        <div class="suggested-cost">
+        <svg class="suggested-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+            <path d="..." fill="#FF6B00"/>
+        </svg>
+        <p class="NewCost">95.000 đ</p>
+        <p class="OldCost">150.000 đ</p>
+        </div>
+    </div>
+
+    <div class="suggested-item">
+        <img src="../../img/Home_Page/suggested/Tinhbotnghe2.svg" alt="Tinh bột nghệ" class="suggested-img">
+        <p class="suggested-title">Tinh bột nghệ</p>
+        <div class="suggested-cost">
+        <svg class="suggested-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+            <path d="..." fill="#FF6B00"/>
+        </svg>
+        <p class="NewCost">95.000 đ</p>
+        <p class="OldCost">150.000 đ</p>
+        </div>
+    </div>
+    </div>
+
+    <div id="footer"></div>
+  </div>   
+  </div>
+  
+  <script>
+    const eyeIcon = document.getElementById("eye-icon");
+    const eyeSvg = document.getElementById("eye-svg");
+    const balanceAmount = document.getElementById("balance-amount");
+
+    const svgOpen = `
+        <svg id="eye-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+        <path d="M11.932 9.51657C12.7231 9.51657 13.4819 9.83085 14.0413 10.3903C14.6008 10.9497 14.915 11.7085 14.915 12.4996C14.915 13.2908 14.6008 14.0495 14.0413 14.609C13.4819 15.1684 12.7231 15.4827 11.932 15.4827C11.1408 15.4827 10.3821 15.1684 9.82266 14.609C9.26323 14.0495 8.94894 13.2908 8.94894 12.4996C8.94894 11.7085 9.26323 10.9497 9.82266 10.3903C10.3821 9.83085 11.1408 9.51657 11.932 9.51657ZM11.932 5.04199C16.9037 5.04199 21.1496 8.13442 22.8698 12.4996C21.1496 16.8648 16.9037 19.9572 11.932 19.9572C6.96024 19.9572 2.71437 16.8648 0.994141 12.4996C2.71437 8.13442 6.96024 5.04199 11.932 5.04199ZM3.16182 12.4996C3.96551 14.1406 5.21347 15.5232 6.76384 16.4902C8.3142 17.4572 10.1048 17.9699 11.932 17.9699C13.7592 17.9699 15.5498 17.4572 17.1001 16.4902C18.6505 15.5232 19.8985 14.1406 20.7022 12.4996C19.8985 10.8586 18.6505 9.47605 17.1001 8.50904C15.5498 7.54203 13.7592 7.02938 11.932 7.02938C10.1048 7.02938 8.3142 7.54203 6.76384 8.50904C5.21347 9.47605 3.96551 10.8586 3.16182 12.4996Z" fill="black"/>
+        </svg>
+    `;
+
+    const svgClosed = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <path d="M2.72186 5.04694L3.48267 4.28613L21.4313 22.2348L20.6705 22.9956L17.0915 19.4059C15.6235 20.0166 14.0161 20.3595 12.323 20.3595C7.43673 20.3595 3.21478 17.5199 1.22168 13.3944C2.26109 11.2513 3.88987 9.46177 5.89368 8.22947L2.72186 5.04694ZM12.323 19.288C13.7054 19.288 15.0341 19.0415 16.2557 18.5807L15.0555 17.3699C14.2733 17.9057 13.341 18.2164 12.323 18.2164C9.64414 18.2164 7.50102 16.0733 7.50102 13.3944C7.50102 12.3764 7.81178 11.4442 8.34756 10.6619L6.68664 9.01171C4.89246 10.057 3.41781 11.5724 2.42183 13.3944C4.32921 16.9091 8.0368 19.288 12.323 19.288ZM22.2243 13.3944C20.3169 9.87968 16.6093 7.50081 12.323 7.50081C11.0908 7.50081 9.8906 7.70441 8.77618 8.06874L7.94036 7.23292C9.30125 6.70786 10.78 6.42925 12.323 6.42925C17.2094 6.42925 21.4313 9.26889 23.4244 13.3944C22.4506 15.4152 20.9424 17.1309 19.0632 18.3557L18.2916 17.5735C19.9311 16.5448 21.292 15.1089 22.2243 13.3944ZM12.323 8.57237C15.0019 8.57237 17.1451 10.7155 17.1451 13.3944C17.1451 14.2731 16.9093 15.0875 16.5021 15.7947L15.7092 15.0017C15.9449 14.5088 16.0735 13.973 16.0735 13.3944C16.0735 12.3997 15.6784 11.4458 14.975 10.7424C14.2717 10.0391 13.3177 9.64393 12.323 9.64393C11.7444 9.64393 11.2086 9.77252 10.7157 10.0083L9.92275 9.21531C10.63 8.80812 11.4444 8.57237 12.323 8.57237ZM8.57258 13.3944C8.57258 14.3891 8.96772 15.343 9.67107 16.0464C10.3744 16.7497 11.3284 17.1449 12.323 17.1449C13.041 17.1449 13.7054 16.9413 14.2733 16.6091L9.10837 11.4442C8.77618 12.0121 8.57258 12.6765 8.57258 13.3944Z" fill="black"/>
+        </svg>
+    `;
+
+    let isVisible = true;
+    const value = "0";
+
+    eyeIcon.addEventListener("click", () => {
+        isVisible = !isVisible;
+        balanceAmount.textContent = isVisible ? value : "••••••";
+        eyeIcon.innerHTML = isVisible ? svgOpen : svgClosed;
+    });
+</script>
+<script>
+    // Load header.html
+    fetch('../header.html').then(response => response.text()).then(data => {document.getElementById('header').innerHTML = data;});
+    </script>
+    <script>
+      fetch('../footer.html').then(response => response.text()).then(data => {document.getElementById('footer').innerHTML = data;});
+    </script>
+</body>
+</html>
