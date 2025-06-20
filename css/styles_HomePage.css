@@ -65,10 +65,6 @@
   background: #b8e997;
 }
 
-/* .voucher-group {
-    
-} */
-
 .coupon {
   width: 139.83px;
   height: 63.636px;
@@ -212,7 +208,7 @@
   justify-content: center;
   margin: auto;
 
-  gap: 90px;
+  gap: 6.94%;
 }
 
 .flashsale-itemp {
@@ -306,7 +302,7 @@
   border-radius: 8px;
   background: #b8e997;
   margin-top: 10px;
-  gap: 100px;
+  gap: 6.94%;
 }
 
 .Phanloai-img {
