@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ví Điện Tử - Mở Ví</title>
+    <link rel="stylesheet" href="../../css/styles_header.css" />
+    <link rel="stylesheet" href="../../css/styles_footer.css" />
+    <link rel="stylesheet" href="../../css/viDienTu/styles_MoVi.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="header"></div>
+
+      <div class="breadcrumb-container">
+        <div class="breadcrumb">
+          <a href="../../index.html" class="link">Trang chủ</a>
+          <span class="divider">&gt;</span>
+          <a href="./index.html" class="link">Ví Điện Tử</a>
+          <span class="divider">&gt;</span>
+          <span class="current">Nạp tiền</span>
+        </div>
+      </div>
+
+      <div class="lienket-wrapper">
+        <p class="lienket-title">Lựa chọn phương thức liên kết:</p>
+
+        <label class="lienket-option">
+          <input
+            type="radio"
+            name="phuongthuc"
+            value="vidientu"
+            onchange="handleRadioChange(this)"
+          />
+          Ví điện tử (MoMo, ZaloPay, ViettelPay,...)
+        </label>
+
+        <label class="lienket-option">
+          <input
+            type="radio"
+            name="phuongthuc"
+            value="nganhang"
+            onchange="handleRadioChange(this)"
+          />
+          Ngân hàng
+        </label>
+
+        <div id="vi-dien-tu-form" style="display: none">
+          <div class="form-group">
+            <label for="loaiVi"
+              >Loại ví liên kết <span style="color: red">*</span></label
+            >
+            <select id="loaiVi">
+              <option value="">Chọn loại ví</option>
+              <option>MoMo</option>
+              <option>ZaloPay</option>
+              <option>ViettelPay</option>
+            </select>
+            <div id="error-vi" class="error-text" style="display: none">
+              Vui lòng chọn ví
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="sdt"
+              >Số điện thoại liên kết <span style="color: red">*</span></label
+            >
+            <input id="sdt" type="text" placeholder="Nhập số điện thoại" />
+            <div id="error-sdt" class="error-text" style="display: none">
+              Vui lòng nhập số điện thoại
+            </div>
+          </div>
+
+          <button class="next-button" onclick="validateForm()">
+            Tiếp theo
+          </button>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+    </div>
+
+    <script>
+      function handleRadioChange(radio) {
+        const viForm = document.getElementById("vi-dien-tu-form");
+        if (radio.value === "vidientu") {
+          viForm.style.display = "block";
+        } else {
+          viForm.style.display = "none";
+        }
+      }
+
+      function validateForm() {
+        const loaiVi = document.getElementById("loaiVi");
+        const sdt = document.getElementById("sdt");
+        const errorVi = document.getElementById("error-vi");
+        const errorSdt = document.getElementById("error-sdt");
+
+        let valid = true;
+
+        if (loaiVi.value === "") {
+          loaiVi.classList.add("error-input");
+          errorVi.style.display = "block";
+          valid = false;
+        } else {
+          loaiVi.classList.remove("error-input");
+          errorVi.style.display = "none";
+        }
+
+        if (sdt.value.trim() === "") {
+          sdt.classList.add("error-input");
+          errorSdt.style.display = "block";
+          valid = false;
+        } else {
+          sdt.classList.remove("error-input");
+          errorSdt.style.display = "none";
+        }
+
+        if (valid) {
+          alert("Form hợp lệ, tiếp tục xử lý...");
+        }
+      }
+    </script>
+
+    <script>
+      fetch("../header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <script>
+      fetch("../footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <script>
+      window.onload = function () {
+        if (!localStorage.getItem("viDaMo")) {
+          fetch("MoViAlert.html")
+            .then((res) => res.text())
+            .then((html) => {
+              // Tạo div chứa nội dung alert
+              const wrapper = document.createElement("div");
+              wrapper.innerHTML = html;
+              document.body.appendChild(wrapper);
+            })
+            .catch((err) => {
+              console.error("Lỗi khi tải file MoViAlert.html:", err);
+            });
+        }
+      };
+    </script>
+  </body>
+</html>
