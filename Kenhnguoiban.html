@@ -40,6 +40,7 @@
 
   <!-- Footer -->
   <div class="chan-trang" id="footer"></div>
+  <div id="popup-container"></div>
     <script>
      fetch('./Composite/KenhNguoiban/header_Kenhnguoiban.html')
     .then(response => response.text())
@@ -89,44 +90,65 @@
     });
     </script>
 <!-- Popup thêm sản phẩm -->
-   <script>
-function openPopup() {
-  fetch('./Composite/Nhaplieu/Nhap-Themsanpham.html')
+    <script>
+      function openPopup() {
+    fetch('./Composite/Nhaplieu/Nhap-Themsanpham.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('popup-container').innerHTML = html;
       document.body.classList.add('no-scroll');
+
+      const script = document.createElement("script");
+      script.src = "./js/popup_them.js"; // Gắn script xử lý nút Lưu
+      document.body.appendChild(script);
     });
-}
+  }
 
-function closePopup() {
-  document.getElementById('popup-container').innerHTML = '';
-  document.body.classList.remove('no-scroll');
-}
-
-</script>
+      
+    </script>
 
     <!-- Popup cap nhật -->
-     <script>function openEditPopup(id) {
-  console.log("Đang mở popup cập nhật với ID:", id);
-
+    
+<script>
+function openEditPopup(id) {
   fetch('./Composite/Nhaplieu/Nhap-Capnhatsanpham.html')
-    .then(res => res.text())
+    .then(res => {
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      return res.text();
+    })
     .then(html => {
-      document.getElementById('popup-container').innerHTML = html;
-      console.log("Đã load HTML cập nhật");
-
+      // Đặt HTML vào container
+      const popupContainer = document.getElementById('popup-container');
+      if (!popupContainer) {
+        console.error("Không tìm thấy popup-container");
+        return;
+      }
+      
+      popupContainer.innerHTML = html;
+      
+      // Tạo và thêm script
+      const existingScript = document.querySelector('script[src="./js/popup_sua.js"]');
+      if (existingScript) {
+        existingScript.remove(); // Xóa script cũ nếu có
+      }
+      
       const script = document.createElement("script");
       script.src = "./js/popup_sua.js";
       script.onload = () => {
-        console.log("Đã load JS sửa");
-        if (typeof openPopup === "function") {
-          openPopup(id);
+        console.log("Script popup_sua.js đã được tải");
+        if (typeof openPopupSua === "function") {
+          openPopupSua(id);
         } else {
-          console.error("Hàm openPopup không tồn tại!");
+          console.error("Hàm openPopupSua không tồn tại!");
         }
       };
-      document.body.appendChild(script);
+      script.onerror = () => {
+        console.error("Lỗi khi tải script popup_sua.js");
+      };
+      
+      document.head.appendChild(script);
     })
     .catch(err => {
       console.error("Lỗi khi tải popup cập nhật:", err);
@@ -137,7 +159,7 @@ function closePopup() {
 
       <script>
         function openDeletePopup(id) {
-  fetch('./Composite/Tb-QLSP/canhbao_Xoasanpham.html')
+    fetch('./Composite/Tb-QLSP/canhbao_Xoasanpham.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('popup-container').innerHTML = html;
