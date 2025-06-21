@@ -1,0 +1,927 @@
+.head-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #9ce66c;
+  	width: 1440px;
+  	height: 80px;
+}
+.logo-sgm-en-4-icon {
+  	position: absolute;
+  	top: 5px;
+  	left: 28px;
+  	width: 124.8px;
+  	height: 70px;
+  	object-fit: cover;
+  	cursor: pointer;
+}
+.group-child {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+  	border-radius: 8px;
+  	background-color: #d9d9d9;
+}
+.kt-qu-tm {
+  	position: absolute;
+  	width: 51.61%;
+  	top: 18.89%;
+  	left: 3.39%;
+  	letter-spacing: 0.5px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	display: flex;
+  	align-items: center;
+}
+.kt-qu-tm1 {
+  	position: absolute;
+  	width: 47.68%;
+  	top: 47.78%;
+  	left: 3.21%;
+  	letter-spacing: 0.5px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	display: flex;
+  	align-items: center;
+}
+.kt-qu-tm2 {
+  	position: absolute;
+  	width: 49.46%;
+  	top: 76.67%;
+  	left: 3.04%;
+  	letter-spacing: 0.5px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	display: flex;
+  	align-items: center;
+}
+.rectangle-parent {
+  	position: absolute;
+  	height: 79.3%;
+  	width: 100%;
+  	top: 20.7%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+}
+.group-item {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+  	border-radius: 8px;
+  	background-color: #fff;
+}
+.tm-kim {
+  	position: absolute;
+  	height: 47.5%;
+  	width: 23.21%;
+  	top: 25%;
+  	left: 0%;
+  	letter-spacing: 0.5px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.vector-icon {
+  	position: absolute;
+  	height: 52.25%;
+  	width: 5.04%;
+  	top: 26.47%;
+  	right: 3.31%;
+  	bottom: 21.28%;
+  	left: 91.65%;
+  	border-radius: 8px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.rectangle-group {
+  	position: absolute;
+  	height: 17.62%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 82.38%;
+  	left: 0%;
+  	text-align: center;
+  	color: rgba(0, 0, 0, 0.53);
+}
+.group-parent {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+}
+.search37-inner {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 560px;
+  	height: 227px;
+}
+.search37 {
+  	position: absolute;
+  	top: 20px;
+  	left: 852px;
+  	width: 560px;
+  	height: 40px;
+  	overflow: hidden;
+}
+.gi-hng1 {
+  	position: absolute;
+  	top: 32px;
+  	left: 170px;
+  	font-size: 40px;
+  	letter-spacing: 0.5px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	text-align: center;
+}
+.head {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1440px;
+  	height: 80px;
+  	font-size: 24px;
+}
+.trang-ch {
+  	position: absolute;
+  	top: 10px;
+  	left: 31px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.div {
+  	position: absolute;
+  	top: 10px;
+  	left: 121px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.gi-hng2 {
+  	position: absolute;
+  	top: 10px;
+  	left: 143px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.trang-ch-parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 8px;
+  	background-color: #f1f1f1;
+  	width: 1101px;
+  	height: 41px;
+  	overflow: hidden;
+}
+.duongdan {
+  	position: absolute;
+  	top: 101px;
+  	left: 170px;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	width: 1101px;
+  	height: 41px;
+}
+.sn-phm {
+  	position: absolute;
+  	top: 14px;
+  	left: 137px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.thao-tc {
+  	position: absolute;
+  	top: 14px;
+  	left: 956px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.s-tin {
+  	position: absolute;
+  	top: 14px;
+  	left: 828px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.s-lng {
+  	position: absolute;
+  	top: 14px;
+  	left: 684px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.n-gi {
+  	position: absolute;
+  	top: 14px;
+  	left: 553px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.thanh-tiu1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 1101px;
+  	height: 49px;
+  	overflow: hidden;
+}
+.thanh-tiu {
+  	position: absolute;
+  	top: 172px;
+  	left: 170px;
+  	width: 1101px;
+  	height: 49px;
+}
+.rectangle {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	background-color: #fff;
+  	width: 1101px;
+  	height: 254px;
+}
+.rounded-rectangle {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 1024px;
+  	height: 89px;
+}
+.check-1-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 3px;
+  	background-color: #fff;
+  	border: 0.5px solid #000;
+  	box-sizing: border-box;
+  	width: 20px;
+  	height: 20px;
+}
+.subwaytick-icon {
+  	position: absolute;
+  	top: 2px;
+  	left: 2px;
+  	width: 16px;
+  	height: 16px;
+  	overflow: hidden;
+}
+.check-1 {
+  	position: absolute;
+  	top: 35px;
+  	left: 45px;
+  	width: 20px;
+  	height: 20px;
+}
+.image-icon {
+  	position: absolute;
+  	top: 6px;
+  	left: 110px;
+  	border-radius: 8px;
+  	width: 75px;
+  	height: 75px;
+  	object-fit: cover;
+}
+.tinh-bt-ngh {
+  	position: absolute;
+  	top: 20px;
+  	left: 199px;
+  	font-size: 20px;
+  	letter-spacing: 0.5px;
+  	line-height: 16px;
+  	font-weight: 500;
+}
+.g {
+  	position: absolute;
+  	top: 49px;
+  	left: 199px;
+  	font-size: 15px;
+  	letter-spacing: 0.5px;
+  	line-height: 16px;
+  	font-weight: 500;
+}
+.sn-phm-1-child {
+  	position: absolute;
+  	top: 57px;
+  	left: 237px;
+  	width: 8px;
+  	height: 5px;
+  	object-fit: contain;
+}
+.div1 {
+  	position: absolute;
+  	top: 34px;
+  	left: 501px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+  	text-align: left;
+}
+.group-inner {
+  	position: absolute;
+  	top: 0px;
+  	left: 66.19px;
+  	background-color: #f4f4f4;
+  	border: 1px solid #000;
+  	box-sizing: border-box;
+  	width: 33.1px;
+  	height: 30px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #f4f4f4;
+  	border: 1px solid #000;
+  	box-sizing: border-box;
+  	width: 33.1px;
+  	height: 30px;
+}
+.group-child1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 30.73px;
+  	background-color: #f4f4f4;
+  	border-top: 1px solid #000;
+  	border-bottom: 1px solid #000;
+  	box-sizing: border-box;
+  	width: 33.1px;
+  	height: 30px;
+}
+.div2 {
+  	position: absolute;
+  	top: 7.5px;
+  	left: 30.73px;
+  	letter-spacing: -0.02em;
+  	line-height: 100%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 33.1px;
+  	height: 15px;
+}
+.icbaseline-plus-icon {
+  	position: absolute;
+  	top: 2.8px;
+  	left: 70.15px;
+  	width: 24.4px;
+  	height: 24.4px;
+  	overflow: hidden;
+}
+.icbaseline-minus-icon {
+  	position: absolute;
+  	top: 2.8px;
+  	left: 0px;
+  	width: 24.4px;
+  	height: 24.4px;
+  	overflow: hidden;
+}
+.group-div {
+  	position: absolute;
+  	top: 0px;
+  	left: 2.36px;
+  	width: 94.6px;
+  	height: 30px;
+}
+.rectangle-container {
+  	position: absolute;
+  	top: 30px;
+  	left: 633px;
+  	width: 99.3px;
+  	height: 30px;
+  	font-size: 14px;
+}
+.div3 {
+  	position: absolute;
+  	top: 34px;
+  	left: 781px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+  	text-align: left;
+}
+.xa {
+  	position: absolute;
+  	top: 34px;
+  	left: 939px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+  	text-align: left;
+}
+.sn-phm-1 {
+  	position: absolute;
+  	top: 19px;
+  	left: 38px;
+  	width: 1024px;
+  	height: 89px;
+}
+.sn-phm-2-item {
+  	position: absolute;
+  	top: 35px;
+  	left: 45px;
+  	border-radius: 3px;
+  	background-color: #fff;
+  	border: 0.5px solid #000;
+  	box-sizing: border-box;
+  	width: 20px;
+  	height: 20px;
+}
+.dongtrunghathao1-1-icon {
+  	position: absolute;
+  	top: 7px;
+  	left: 110px;
+  	border-radius: 8px;
+  	width: 75px;
+  	height: 75px;
+  	object-fit: cover;
+}
+.ng-trng-h {
+  	position: absolute;
+  	top: 18px;
+  	left: 203px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.g1 {
+  	position: absolute;
+  	top: 46px;
+  	left: 203px;
+  	font-size: 15px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.sn-phm-2-inner {
+  	position: absolute;
+  	top: 55px;
+  	left: 232px;
+  	width: 8px;
+  	height: 5px;
+  	object-fit: contain;
+}
+.div4 {
+  	position: absolute;
+  	top: 34px;
+  	left: 501px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.rectangle-parent1 {
+  	position: absolute;
+  	top: 25px;
+  	left: 633px;
+  	width: 99.3px;
+  	height: 30px;
+  	text-align: center;
+  	font-size: 14px;
+}
+.div6 {
+  	position: absolute;
+  	top: 29px;
+  	left: 781px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.xa1 {
+  	position: absolute;
+  	top: 29px;
+  	left: 939px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.sn-phm-2 {
+  	position: absolute;
+  	top: 121px;
+  	left: 38px;
+  	width: 1024px;
+  	height: 89px;
+  	text-align: left;
+}
+.sn-phm-t {
+  	position: absolute;
+  	top: 242px;
+  	left: 170px;
+  	width: 1101px;
+  	height: 254px;
+  	text-align: center;
+}
+.group-child5 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	background-color: #fff;
+  	width: 1101px;
+  	height: 86px;
+}
+.group-child6 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 20px;
+  	background-color: #58b536;
+  	width: 237.3px;
+  	height: 53px;
+}
+.mua-hng {
+  	position: absolute;
+  	top: calc(50% - 18.5px);
+  	left: calc(50% - 53.65px);
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 108px;
+  	height: 38px;
+}
+.rectangle-parent4 {
+  	position: absolute;
+  	top: 16px;
+  	left: 845px;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	width: 237.3px;
+  	height: 53px;
+  	cursor: pointer;
+  	font-size: 24px;
+}
+.tng-cng-2 {
+  	position: absolute;
+  	top: 32px;
+  	left: 531px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+}
+.xa2 {
+  	position: absolute;
+  	top: 32px;
+  	left: 196px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+  	text-align: left;
+}
+.chn-tt-c {
+  	position: absolute;
+  	top: 32px;
+  	left: 57px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+  	text-align: left;
+}
+.group-child7 {
+  	position: absolute;
+  	top: 33px;
+  	left: 28px;
+  	border-radius: 3px;
+  	background-color: #fff;
+  	border: 0.5px solid #000;
+  	box-sizing: border-box;
+  	width: 20px;
+  	height: 20px;
+}
+.rectangle-parent3 {
+  	position: absolute;
+  	top: 517px;
+  	left: 170px;
+  	width: 1101px;
+  	height: 86px;
+  	text-align: center;
+}
+.chantrang-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #9ce66c;
+  	width: 1440px;
+  	height: 220px;
+}
+.logo-sgm-en-5-icon {
+  	position: absolute;
+  	top: 28px;
+  	left: 0px;
+  	width: 204.6px;
+  	height: 114.8px;
+  	object-fit: cover;
+}
+.group-icon {
+  	position: absolute;
+  	height: 32.86%;
+  	width: 21.51%;
+  	top: 66.71%;
+  	right: 0%;
+  	bottom: 0.43%;
+  	left: 78.49%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.kt-ni {
+  	position: absolute;
+  	top: 0px;
+  	left: 9px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 108px;
+  	height: 28.9px;
+}
+.logosfacebook-icon {
+  	position: absolute;
+  	top: 49.76px;
+  	left: 0px;
+  	width: 28.5px;
+  	height: 28.5px;
+  	overflow: hidden;
+}
+.logosyoutube-icon {
+  	position: absolute;
+  	top: 49.76px;
+  	left: 45.93px;
+  	width: 40.5px;
+  	height: 28.5px;
+  	overflow: hidden;
+}
+.group-wrapper {
+  	position: absolute;
+  	height: 54.92%;
+  	width: 12.24%;
+  	top: 8.39%;
+  	right: 0%;
+  	bottom: 36.69%;
+  	left: 87.76%;
+}
+.thng-tin-lin {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 243px;
+  	height: 52.8px;
+}
+.a-ch-1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 16px;
+  	line-height: 16px;
+  	display: flex;
+  	align-items: flex-end;
+  	width: 227px;
+  	height: 34px;
+}
+.div7 {
+  	position: absolute;
+  	top: 33.52px;
+  	left: 16px;
+  	line-height: 16px;
+  	display: flex;
+  	align-items: center;
+  	width: 95px;
+  	height: 33.9px;
+}
+.supportskygardentlucom {
+  	position: absolute;
+  	top: 55.43px;
+  	left: 16px;
+  	line-height: 16px;
+  	display: flex;
+  	align-items: center;
+  	width: 203px;
+  	height: 33.9px;
+}
+.icon-park-solidlocal-two {
+  	position: absolute;
+  	top: 2.63px;
+  	left: 0px;
+  	width: 16px;
+  	height: 16px;
+  	overflow: hidden;
+  	object-fit: cover;
+}
+.icsharp-phone-icon {
+  	position: absolute;
+  	top: 39.48px;
+  	left: 0.02px;
+  	width: 16px;
+  	height: 16px;
+  	overflow: hidden;
+}
+.icbaseline-mail-icon {
+  	position: absolute;
+  	top: 64.38px;
+  	left: 0.02px;
+  	width: 16px;
+  	height: 16px;
+  	overflow: hidden;
+}
+.a-ch-1-ng-hu-hip-ha-b-parent {
+  	position: absolute;
+  	top: 53.12px;
+  	left: 0px;
+  	width: 243px;
+  	height: 89.3px;
+  	text-align: left;
+  	font-size: 16px;
+}
+.thng-tin-lin-h-parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 288px;
+  	width: 243px;
+  	height: 142.4px;
+  	text-align: center;
+}
+.quy-nh {
+  	position: absolute;
+  	top: 54.77px;
+  	left: 0px;
+  	line-height: 50px;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 74px;
+  	height: 18.9px;
+}
+.chnh-sch-v {
+  	position: absolute;
+  	top: 0px;
+  	left: 6px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 193px;
+  	height: 25.9px;
+}
+.hng-dn-khch {
+  	position: absolute;
+  	top: 24.9px;
+  	left: 6px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 193px;
+  	height: 25.9px;
+}
+.quy-nh-parent {
+  	position: absolute;
+  	top: 63.73px;
+  	left: 0px;
+  	width: 199px;
+  	height: 73.7px;
+}
+.h-tr-khch {
+  	position: absolute;
+  	top: 0px;
+  	left: 6px;
+  	font-size: 32px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 304px;
+  	height: 52.8px;
+}
+.group-parent1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 592px;
+  	width: 310px;
+  	height: 137.4px;
+  	font-size: 16px;
+}
+.giy-php-ca {
+  	position: absolute;
+  	top: 54.77px;
+  	left: 0px;
+  	line-height: 50px;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 149.7px;
+  	height: 18.9px;
+}
+.gii-thiu {
+  	position: absolute;
+  	top: 0px;
+  	left: 5.95px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 77.3px;
+  	height: 25.9px;
+}
+.h-thng-ca {
+  	position: absolute;
+  	top: 24.9px;
+  	left: 5.7px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 183.3px;
+  	height: 25.9px;
+}
+.giy-php-ca-hng-parent {
+  	position: absolute;
+  	top: 63.73px;
+  	left: 0px;
+  	width: 189px;
+  	height: 73.7px;
+}
+.skygarden {
+  	position: absolute;
+  	top: 0px;
+  	left: 3.95px;
+  	font-size: 32px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 200.1px;
+  	height: 52.8px;
+}
+.group-parent2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 204px;
+  	height: 137.4px;
+  	font-size: 16px;
+}
+.group-container {
+  	position: absolute;
+  	height: 99.72%;
+  	width: 80.93%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0.28%;
+  	left: 19.07%;
+}
+.logo-sgm-en-5-parent {
+  	position: absolute;
+  	top: 27.88px;
+  	left: 32px;
+  	width: 1337.5px;
+  	height: 142.8px;
+}
+.chantrang {
+  	position: absolute;
+  	top: 804px;
+  	left: 0px;
+  	width: 1440px;
+  	height: 220px;
+  	font-size: 32px;
+}
+.gi-hng {
+  	width: 100%;
+  	position: relative;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	background-color: #fff;
+  	height: 1024px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 18px;
+  	color: #000;
+  	font-family: Roboto;
+}
+
