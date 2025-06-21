@@ -282,6 +282,16 @@ if (rutData && rutData.soTien) {
 }
 
   };
+
+  // Sau khi tạo alert xong
+document.body.insertAdjacentHTML('beforeend', `
+  <div id="wallet-alert" class="fade-alert">Thông báo</div>
+`);
+
+setTimeout(() => {
+  const alert = document.getElementById("wallet-alert");
+  alert.style.display = "none";
+}, 2);
 </script>
 
 
