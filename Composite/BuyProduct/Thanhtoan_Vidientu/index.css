@@ -1,0 +1,906 @@
+.head-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #9ce66c;
+  	width: 1440px;
+  	height: 80px;
+}
+.logo-sgm-en-4-icon {
+  	position: absolute;
+  	top: 5px;
+  	left: 28px;
+  	width: 124.8px;
+  	height: 70px;
+  	object-fit: cover;
+  	cursor: pointer;
+}
+.thanh-ton {
+  	position: absolute;
+  	top: 32px;
+  	left: 170px;
+  	letter-spacing: 0.5px;
+  	line-height: 16px;
+  	font-weight: 500;
+}
+.head {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1440px;
+  	height: 80px;
+  	text-align: center;
+  	font-size: 40px;
+}
+.trang-ch {
+  	position: absolute;
+  	top: 10px;
+  	left: 31px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.div {
+  	position: absolute;
+  	top: 10px;
+  	left: 121px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.gi-hng {
+  	position: absolute;
+  	top: 10px;
+  	left: 143px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.div1 {
+  	position: absolute;
+  	top: 10px;
+  	left: 225px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.thanh-ton1 {
+  	position: absolute;
+  	top: 10px;
+  	left: 247px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.trang-ch-parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 8px;
+  	background-color: #f1f1f1;
+  	width: 1101px;
+  	height: 41px;
+  	overflow: hidden;
+}
+.duongdan {
+  	position: absolute;
+  	top: 101px;
+  	left: 170px;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	width: 1101px;
+  	height: 41px;
+}
+.icon-park-solidlocal-two {
+  	position: absolute;
+  	top: 17px;
+  	left: 17px;
+  	width: 16px;
+  	height: 16px;
+  	overflow: hidden;
+  	object-fit: cover;
+}
+.a-ch-nhn {
+  	position: absolute;
+  	top: 13px;
+  	left: 43px;
+}
+.bi-vit-hin {
+  	position: absolute;
+  	top: 50px;
+  	left: 17px;
+}
+.ng-204-ng {
+  	position: absolute;
+  	top: 52px;
+  	left: 372px;
+  	font-size: 14px;
+}
+.thay-i {
+  	position: absolute;
+  	top: 52px;
+  	left: 996px;
+  	font-size: 14px;
+  	color: #1877f2;
+}
+.thanh-tiu1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 1101px;
+  	height: 81px;
+  	overflow: hidden;
+}
+.thanh-tiu {
+  	position: absolute;
+  	top: 172px;
+  	left: 170px;
+  	width: 1101px;
+  	height: 81px;
+  	text-align: center;
+  	font-size: 20px;
+  	font-family: Inter;
+}
+.rectangle {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	background-color: #fff;
+  	width: 1101px;
+  	height: 254px;
+}
+.rounded-rectangle {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 1024px;
+  	height: 89px;
+}
+.image-icon {
+  	position: absolute;
+  	top: 8px;
+  	left: 12px;
+  	border-radius: 8px;
+  	width: 75px;
+  	height: 75px;
+  	object-fit: cover;
+}
+.tinh-bt-ngh {
+  	position: absolute;
+  	top: 38px;
+  	left: 99px;
+  	font-size: 20px;
+  	letter-spacing: 0.5px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	text-align: center;
+}
+.loi-500g {
+  	position: absolute;
+  	top: 38px;
+  	left: 282px;
+  	font-size: 15px;
+  	letter-spacing: 0.5px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	text-align: center;
+}
+.div2 {
+  	position: absolute;
+  	top: 34px;
+  	left: 605px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.div3 {
+  	position: absolute;
+  	top: 34px;
+  	left: 926px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.div4 {
+  	position: absolute;
+  	top: 34px;
+  	left: 780px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.sn-phm-1 {
+  	position: absolute;
+  	top: 19px;
+  	left: 38px;
+  	width: 1024px;
+  	height: 89px;
+}
+.dongtrunghathao1-1-icon {
+  	position: absolute;
+  	top: 7px;
+  	left: 12px;
+  	border-radius: 8px;
+  	width: 75px;
+  	height: 75px;
+  	object-fit: cover;
+}
+.ng-trng-h {
+  	position: absolute;
+  	top: 34px;
+  	left: 99px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.loi-20g {
+  	position: absolute;
+  	top: 37px;
+  	left: 282px;
+  	font-size: 15px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.div5 {
+  	position: absolute;
+  	top: 34px;
+  	left: 590px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.div6 {
+  	position: absolute;
+  	top: 34px;
+  	left: 911px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.div7 {
+  	position: absolute;
+  	top: 34px;
+  	left: 785px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.sn-phm-2 {
+  	position: absolute;
+  	top: 121px;
+  	left: 38px;
+  	width: 1024px;
+  	height: 89px;
+}
+.sn-phm-t {
+  	position: absolute;
+  	top: 361px;
+  	left: 164px;
+  	width: 1101px;
+  	height: 254px;
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	background-color: #fff;
+  	width: 1101px;
+  	height: 46px;
+}
+.thnh-tin {
+  	position: absolute;
+  	top: 12px;
+  	left: 941px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.s-lng {
+  	position: absolute;
+  	top: 12px;
+  	left: 788px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.n-gi {
+  	position: absolute;
+  	top: 12px;
+  	left: 645px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.sn-phm {
+  	position: absolute;
+  	top: 12px;
+  	left: 112px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	font-weight: 600;
+}
+.rectangle-parent {
+  	position: absolute;
+  	top: 283px;
+  	left: 170px;
+  	width: 1101px;
+  	height: 46px;
+}
+.group-item {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	background-color: #fff;
+  	width: 1100px;
+  	height: 475px;
+}
+.div8 {
+  	position: absolute;
+  	top: 170px;
+  	left: 134px;
+  	font-size: 18px;
+  	font-family: Inter;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 133px;
+  	height: 19px;
+}
+.tng-s-d {
+  	position: absolute;
+  	top: 143px;
+  	left: 135px;
+  	font-size: 18px;
+  	font-family: Inter;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 139px;
+  	height: 19px;
+}
+.group-inner {
+  	position: absolute;
+  	top: 218.5px;
+  	left: 0.5px;
+  	border-top: 1px solid #000;
+  	box-sizing: border-box;
+  	width: 1101.2px;
+  	height: 1px;
+}
+.d-1-icon {
+  	position: absolute;
+  	top: 137px;
+  	left: 76px;
+  	border-radius: 112.5px;
+  	width: 57.6px;
+  	height: 57.6px;
+  	object-fit: cover;
+}
+.group-icon {
+  	position: absolute;
+  	top: 153px;
+  	left: 36px;
+  	width: 26px;
+  	height: 26px;
+}
+.tng-s-tin {
+  	position: absolute;
+  	top: 250px;
+  	left: 681px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 186px;
+  	height: 20px;
+}
+.b {
+  	position: absolute;
+  	top: 251px;
+  	left: 967px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 108px;
+  	height: 18px;
+}
+.tng-s-tin1 {
+  	position: absolute;
+  	top: 302px;
+  	left: 657px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 300px;
+  	height: 20px;
+}
+.b1 {
+  	position: absolute;
+  	top: 305px;
+  	left: 1038px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 37px;
+  	height: 18px;
+}
+.tng-thanh-ton {
+  	position: absolute;
+  	top: 348px;
+  	left: 667px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 200px;
+  	height: 20px;
+}
+.b2 {
+  	position: absolute;
+  	top: 349px;
+  	left: 967px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 108px;
+  	height: 18px;
+}
+.line-div {
+  	position: absolute;
+  	top: 107.3px;
+  	left: 0.27px;
+  	border-top: 1px solid #000;
+  	box-sizing: border-box;
+  	width: 1101.2px;
+  	height: 1px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	backdrop-filter: blur(4px);
+  	border-radius: 8px;
+  	background-color: #58b536;
+  	border: 1px solid rgba(0, 0, 0, 0.5);
+  	box-sizing: border-box;
+  	width: 311px;
+  	height: 41px;
+}
+.v-in-t {
+  	position: absolute;
+  	top: calc(50% - 8px);
+  	left: calc(50% - 50px);
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 99.7px;
+  	height: 18.4px;
+  	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+.rectangle-container {
+  	position: absolute;
+  	top: 31px;
+  	left: 606px;
+  	width: 310px;
+  	height: 40px;
+  	font-size: 20px;
+  	font-family: Inter;
+}
+.group-child1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	backdrop-filter: blur(4px);
+  	border-radius: 8px;
+  	background-color: #fff;
+  	border: 1px solid rgba(0, 0, 0, 0.5);
+  	box-sizing: border-box;
+  	width: 311px;
+  	height: 41px;
+}
+.thanh-ton-khi {
+  	position: absolute;
+  	top: calc(50% - 11px);
+  	left: calc(50% - 124px);
+  	display: inline-block;
+  	width: 247.7px;
+  	height: 16.1px;
+  	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+.group-div {
+  	position: absolute;
+  	top: 31px;
+  	left: 276px;
+  	width: 310px;
+  	height: 40px;
+  	cursor: pointer;
+  	text-align: left;
+  	font-size: 20px;
+  	font-family: Inter;
+}
+.phng-thc-thanh {
+  	position: absolute;
+  	top: 33px;
+  	left: 31px;
+  	font-size: 20px;
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	display: flex;
+  	text-align: left;
+  	align-items: center;
+  	width: 264.4px;
+  	height: 35.3px;
+}
+.group-child2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 20px;
+  	background-color: #58b536;
+  	width: 237.3px;
+  	height: 53px;
+}
+.mua-hng {
+  	position: absolute;
+  	top: calc(50% - 18.5px);
+  	left: calc(50% - 53.65px);
+  	letter-spacing: -0.02em;
+  	line-height: 120%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 108px;
+  	height: 38px;
+}
+.rectangle-parent1 {
+  	position: absolute;
+  	top: 404px;
+  	left: 838px;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	width: 237.3px;
+  	height: 53px;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 647px;
+  	left: 164px;
+  	width: 1101.2px;
+  	height: 475px;
+  	text-align: center;
+  	font-size: 24px;
+}
+.thanh-ton-v-in-t-child {
+  	position: absolute;
+  	top: 3px;
+  	left: -156px;
+  	background-color: #d9d9d9;
+  	width: 157px;
+  	height: 833px;
+}
+.chantrang-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #9ce66c;
+  	width: 1440px;
+  	height: 220px;
+}
+.logo-sgm-en-5-icon {
+  	position: absolute;
+  	top: 28px;
+  	left: 0px;
+  	width: 204.6px;
+  	height: 114.8px;
+  	object-fit: cover;
+}
+.group-icon1 {
+  	position: absolute;
+  	height: 32.86%;
+  	width: 21.51%;
+  	top: 66.71%;
+  	right: 0%;
+  	bottom: 0.43%;
+  	left: 78.49%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.kt-ni {
+  	position: absolute;
+  	top: 0px;
+  	left: 9px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 108px;
+  	height: 28.9px;
+}
+.logosfacebook-icon {
+  	position: absolute;
+  	top: 49.76px;
+  	left: 0px;
+  	width: 28.5px;
+  	height: 28.5px;
+  	overflow: hidden;
+}
+.logosyoutube-icon {
+  	position: absolute;
+  	top: 49.76px;
+  	left: 45.93px;
+  	width: 40.5px;
+  	height: 28.5px;
+  	overflow: hidden;
+}
+.group {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+}
+.group-wrapper {
+  	position: absolute;
+  	height: 54.92%;
+  	width: 12.24%;
+  	top: 8.39%;
+  	right: 0%;
+  	bottom: 36.69%;
+  	left: 87.76%;
+}
+.thng-tin-lin {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 243px;
+  	height: 52.8px;
+}
+.a-ch-1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 16px;
+  	line-height: 16px;
+  	display: flex;
+  	align-items: flex-end;
+  	width: 227px;
+  	height: 34px;
+}
+.div9 {
+  	position: absolute;
+  	top: 33.52px;
+  	left: 16px;
+  	line-height: 16px;
+  	display: flex;
+  	align-items: center;
+  	width: 95px;
+  	height: 33.9px;
+}
+.supportskygardentlucom {
+  	position: absolute;
+  	top: 55.43px;
+  	left: 16px;
+  	line-height: 16px;
+  	display: flex;
+  	align-items: center;
+  	width: 203px;
+  	height: 33.9px;
+}
+.icon-park-solidlocal-two1 {
+  	position: absolute;
+  	top: 2.63px;
+  	left: 0px;
+  	width: 16px;
+  	height: 16px;
+  	overflow: hidden;
+  	object-fit: cover;
+}
+.icsharp-phone-icon {
+  	position: absolute;
+  	top: 39.48px;
+  	left: 0.02px;
+  	width: 16px;
+  	height: 16px;
+  	overflow: hidden;
+}
+.icbaseline-mail-icon {
+  	position: absolute;
+  	top: 64.38px;
+  	left: 0.02px;
+  	width: 16px;
+  	height: 16px;
+  	overflow: hidden;
+}
+.a-ch-1-ng-hu-hip-ha-b-parent {
+  	position: absolute;
+  	top: 53.12px;
+  	left: 0px;
+  	width: 243px;
+  	height: 89.3px;
+  	text-align: left;
+  	font-size: 16px;
+}
+.thng-tin-lin-h-parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 288px;
+  	width: 243px;
+  	height: 142.4px;
+  	text-align: center;
+}
+.quy-nh {
+  	position: absolute;
+  	top: 54.77px;
+  	left: 0px;
+  	line-height: 50px;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 74px;
+  	height: 18.9px;
+}
+.chnh-sch-v {
+  	position: absolute;
+  	top: 0px;
+  	left: 6px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 193px;
+  	height: 25.9px;
+}
+.hng-dn-khch {
+  	position: absolute;
+  	top: 24.9px;
+  	left: 6px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 193px;
+  	height: 25.9px;
+}
+.quy-nh-parent {
+  	position: absolute;
+  	top: 63.73px;
+  	left: 0px;
+  	width: 199px;
+  	height: 73.7px;
+}
+.h-tr-khch {
+  	position: absolute;
+  	top: 0px;
+  	left: 6px;
+  	font-size: 32px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 304px;
+  	height: 52.8px;
+}
+.group-container {
+  	position: absolute;
+  	top: 0px;
+  	left: 592px;
+  	width: 310px;
+  	height: 137.4px;
+  	font-size: 16px;
+}
+.giy-php-ca {
+  	position: absolute;
+  	top: 54.77px;
+  	left: 0px;
+  	line-height: 50px;
+  	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 149.7px;
+  	height: 18.9px;
+}
+.gii-thiu {
+  	position: absolute;
+  	top: 0px;
+  	left: 5.95px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 77.3px;
+  	height: 25.9px;
+}
+.h-thng-ca {
+  	position: absolute;
+  	top: 24.9px;
+  	left: 5.7px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 183.3px;
+  	height: 25.9px;
+}
+.giy-php-ca-hng-parent {
+  	position: absolute;
+  	top: 63.73px;
+  	left: 0px;
+  	width: 189px;
+  	height: 73.7px;
+}
+.skygarden {
+  	position: absolute;
+  	top: 0px;
+  	left: 3.95px;
+  	font-size: 32px;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+  	width: 200.1px;
+  	height: 52.8px;
+}
+.group-parent1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 204px;
+  	height: 137.4px;
+  	font-size: 16px;
+}
+.group-parent {
+  	position: absolute;
+  	height: 99.72%;
+  	width: 80.93%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0.28%;
+  	left: 19.07%;
+}
+.logo-sgm-en-5-parent {
+  	position: absolute;
+  	top: 27.88px;
+  	left: 32px;
+  	width: 1337.5px;
+  	height: 142.8px;
+}
+.chantrang {
+  	position: absolute;
+  	top: 1155px;
+  	left: 0px;
+  	width: 1440px;
+  	height: 220px;
+  	font-size: 32px;
+}
+.thanh-ton-v-in-t {
+  	width: 100%;
+  	position: relative;
+  	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  	background-color: #fff;
+  	height: 1375px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 18px;
+  	color: #000;
+  	font-family: Roboto;
+}
+
