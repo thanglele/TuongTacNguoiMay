@@ -34,7 +34,7 @@
 
       <div class="alert-overlay">
     <div class="alert-box">
-      <div class="alert-close" onclick="closeAlert()">×</div>
+      <div class="alert-close" onclick="window.location.href = '/'">×</div>
       <div class="alert-icon">
         <div class="circle">
           <span class="exclam">!</span>
@@ -52,11 +52,6 @@
     localStorage.setItem("viDaMo", "true");
     // Chuyển hướng sang trang mở ví
     window.location.href = "../viDienTu/MoVi.html";
-  }
-
-  function closeAlert() {
-    const alert = document.querySelector(".alert-background");
-    if (alert) alert.remove();
   }
 </script>
 
