@@ -1,0 +1,121 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bảng sản phẩm</title>
+  <link rel="stylesheet" href="../../css/KenhNguoiban/bang.css">
+</head>
+<body>
+
+<<div class="table-wrapper">
+  <div class="top-bar">
+    <button class="add-button" onclick="openPopup()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 46" width="84" height="46" fill="none">
+        <g filter="url(#filter0_d)">
+          <path d="M8 8C8 3.58 11.58 0 16 0H68C72.42 0 76 3.58 76 8V22C76 26.42 72.42 30 68 30H16C11.58 30 8 26.42 8 22V8Z" fill="#AFEC87"/>
+        </g>
+        <defs>
+          <filter id="filter0_d" x="0" y="0" width="84" height="46">
+            <feOffset dy="8"/>
+            <feGaussianBlur stdDeviation="4"/>
+            <feBlend in2="BackgroundImageFix"/>
+          </filter>
+        </defs>
+      </svg>
+      <span>+ Thêm</span>
+    </button>
+  </div>
+
+  <!-- Header bảng -->
+  <div class="table-header">
+    <div>Mã sản phẩm</div>
+    <div>Tên sản phẩm</div>
+    <div>Danh mục</div>
+    <div>Giá sản phẩm</div>
+    <div>Tồn kho</div>
+    <div>Đã bán</div>
+    <div>Trạng thái</div>
+    <div>Thời gian cập nhật</div>
+    <div>Thao tác</div>
+  </div>
+
+  <!-- Hàng dữ liệu -->
+  <div class="table-row">
+    <div class="cell">MSP1</div>
+    <div class="cell product-info">
+      <img src="https://via.placeholder.com/55x60" alt="Gạo">
+      <div>
+        <div class="product-name">Gạo Bắc Hương</div>
+        <div class="description">Mô tả</div>
+      </div>
+    </div>
+    <div class="cell">Gạo</div>
+    <div class="cell">120.000đ</div>
+    <div class="cell">50</div>
+    <div class="cell">2</div>
+    <div class="cell"><span class="status">Đang bán</span></div>
+    <div class="cell">12:14 6/6/2024</div>
+    <div class="cell actions">
+      <button class="btn-action" title="Xem">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 32" fill="none">
+      <g filter="url(#filter-xem)">
+        <path d="M19.9999 4.8C19.1512 4.8 18.3373 5.13714 17.7372 5.73726C17.1371 6.33737 16.7999 7.15131 16.7999 8C16.7999 8.84869 17.1371 9.66263 17.7372 10.2627C18.3373 10.8629 19.1512 11.2 19.9999 11.2C20.8486 11.2 21.6626 10.8629 22.2627 10.2627C22.8628 9.66263 23.1999 8.84869 23.1999 8C23.1999 7.15131 22.8628 6.33737 22.2627 5.73726C21.6626 5.13714 20.8486 4.8 19.9999 4.8ZM19.9999 13.3333C18.5854 13.3333 17.2289 12.7714 16.2287 11.7712C15.2285 10.771 14.6666 9.41449 14.6666 8C14.6666 6.58551 15.2285 5.22896 16.2287 4.22876C17.2289 3.22857 18.5854 2.66667 19.9999 2.66667C21.4144 2.66667 22.771 3.22857 23.7712 4.22876C24.7714 5.22896 25.3333 6.58551 25.3333 8C25.3333 9.41449 24.7714 10.771 23.7712 11.7712C22.771 12.7714 21.4144 13.3333 19.9999 13.3333ZM19.9999 0C14.6666 0 10.1119 3.31733 8.2666 8C10.1119 12.6827 14.6666 16 19.9999 16C25.3333 16 29.8879 12.6827 31.7333 8C29.8879 3.31733 25.3333 0 19.9999 0Z" fill="#1E5F00"/>
+      </g>
+      <defs>
+        <filter id="filter-xem" x="0" y="0" width="40" height="32">
+          <feFlood flood-opacity="0"/>
+          <feOffset dy="8"/>
+          <feGaussianBlur stdDeviation="4"/>
+          <feComposite in2="SourceAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic"/>
+        </filter>
+      </defs>
+    </svg>
+  </button>
+    <button class="btn-action" title="Sửa" onclick="openEditPopup('MSP1')">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 34" fill="none">
+      <g filter="url(#filter-sua)">
+        <path d="M14.2606 16.7477L23.2608 7.74753L18.9859 3.4726L9.98566 12.4728C9.86164 12.5968 9.7736 12.7521 9.73095 12.9222L8.7334 18L13.8102 17.0025C13.9807 16.9598 14.1366 16.8717 14.2606 16.7477ZM26.1663 4.84205C26.5294 4.47881 26.7334 3.98622 26.7334 3.4726C26.7334 2.95898 26.5294 2.46639 26.1663 2.10315L24.6302 0.567123C24.267 0.203994 23.7744 0 23.2608 0C22.7472 0 22.2546 0.203994 21.8913 0.567123L20.3553 2.10315L24.6302 6.37808L26.1663 4.84205Z" fill="#1E5F00"/>
+      </g>
+      <defs>
+        <filter id="filter-sua" x="0" y="0" width="35" height="34">
+          <feFlood flood-opacity="0"/>
+          <feOffset dy="8"/>
+          <feGaussianBlur stdDeviation="4"/>
+          <feComposite in2="SourceAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic"/>
+        </filter>
+      </defs>
+    </svg>
+  </button>
+       <button class="btn-action"  onclick="openDeletePopup('MSP1')" title="Xoá">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 34" fill="none">
+      <g filter="url(#filter-xoa)">
+        <path d="M22.7334 1H19.2334L18.2334 0H13.2334L12.2334 1H8.7334V3H22.7334M9.7334 16C9.7334 16.5304 9.94411 17.0391 10.3192 17.4142C10.6943 17.7893 11.203 18 11.7334 18H19.7334C20.2638 18 20.7725 17.7893 21.1476 17.4142C21.5227 17.0391 21.7334 16.5304 21.7334 16V4H9.7334V16Z" fill="#1E5F00"/>
+      </g>
+      <defs>
+        <filter id="filter-xoa" x="0" y="0" width="31" height="34">
+          <feFlood flood-opacity="0"/>
+          <feOffset dy="8"/>
+          <feGaussianBlur stdDeviation="4"/>
+          <feComposite in2="SourceAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic"/>
+        </filter>
+      </defs>
+    </svg>
+  </button>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
