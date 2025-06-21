@@ -76,7 +76,7 @@
   <div id="voucher-container">
     <div class="voucher-group">
         <div class="voucher-item">
-            <img src="./img/Home_Page/Coupon1.svg" alt="Coupon 1" class="voucher-image">
+            <img src="../../img/Home_Page/Coupon1.svg" alt="Coupon 1" class="voucher-image">
             <div>
             <p class="voucher-title">Coupon1</p>
             <p class="voucher-description">Giảm 5K cho đơn từ 149K</p>
@@ -85,7 +85,7 @@
             <button id="save-voucher">LƯU</button>
         </div>
         <div class="voucher-item">
-            <img src="./img/Home_Page/Coupon2.svg" alt="Coupon 2" class="voucher-image">
+            <img src="../../img/Home_Page/Coupon2.svg" alt="Coupon 2" class="voucher-image">
             <div>
             <p class="voucher-title">Coupon2</p>
             <p class="voucher-description">Giảm 10K cho đơn từ 199K</p>
@@ -97,7 +97,7 @@
 
     <div class="voucher-group">
         <div class="voucher-item">
-            <img src="./img/Home_Page/Coupon3.svg" alt="Coupon 3" class="voucher-image">
+            <img src="../../img/Home_Page/Coupon3.svg" alt="Coupon 3" class="voucher-image">
             <div>
             <p class="voucher-title">Coupon3</p>
             <p class="voucher-description">Giảm 50K cho đơn từ 449K</p>
@@ -242,8 +242,26 @@ if (localStorage.getItem("thongBaoMoVi") === "true") {
     .catch(err => console.error("Không thể tải thông báo:", err));
     localStorage.setItem("thongBaoMoVi", "false");
 }
+const napData = JSON.parse(localStorage.getItem("pendingNapTien"));
+if (napData && napData.soTien) {
+  fetch("../../Composite/E_Wallet/Alert_NapThanhCong.html")
+    .then(res => res.text())
+    .then(html => {
+      document.body.insertAdjacentHTML("beforeend", html);
+    });
+
+  setTimeout(() => {
+    localStorage.removeItem("thanhCongNap");
+  }, 3000);
+}
+
+    // Cộng tiền vào số dư nếu cần
+    const soDu = localStorage.getItem("soDuVi") || "0";
+    const element = document.getElementById("balance-amount");
+    if (element) element.textContent = Number(soDu).toLocaleString();
   };
 </script>
+
 
 </body>
 </html>
