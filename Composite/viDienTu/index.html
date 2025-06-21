@@ -225,13 +225,27 @@
     </script>
     <script>
   window.onload = function () {
+    const soDu = Number(localStorage.getItem("soDuVi")) || 0;
+    const balanceElement = document.getElementById("balance-amount");
+
+    if (balanceElement) {
+      balanceElement.textContent = soDu.toLocaleString(); // Định dạng có dấu chấm ngăn cách
+    }
+
     if (!localStorage.getItem("viDaMo")) {
       fetch("../../Composite/E_Wallet/Alert_MoVi_E_Wallet.html")
-        .then(response => response.text())
-        .then(html => {
-        document.body.insertAdjacentHTML("beforeend", html);
-        })
-        .catch(err => console.error("Không thể tải thông báo:", err));
+  .then(response => response.text())
+  .then(html => {
+    document.body.insertAdjacentHTML("beforeend", html);
+    const button = document.querySelector(".alert-button");
+    if (button) {
+      button.addEventListener("click", function () {
+        localStorage.setItem("viDaMo", "true");
+        window.location.href = "MoVi.html";
+      });
+    }
+  });
+
     }
 if (localStorage.getItem("thongBaoMoVi") === "true") {
   fetch("../../Composite/E_Wallet/Alert_MoViThanhCong.html")
@@ -243,7 +257,7 @@ if (localStorage.getItem("thongBaoMoVi") === "true") {
     localStorage.setItem("thongBaoMoVi", "false");
 }
 const napData = JSON.parse(localStorage.getItem("pendingNapTien"));
-if (napData && napData.soTien) {
+if (localStorage.getItem("thanhCongNap") === "true" && napData && napData.soTien) {
   fetch("../../Composite/E_Wallet/Alert_NapThanhCong.html")
     .then(res => res.text())
     .then(html => {
@@ -256,9 +270,17 @@ if (napData && napData.soTien) {
 }
 
     // Cộng tiền vào số dư nếu cần
-    const soDu = localStorage.getItem("soDuVi") || "0";
     const element = document.getElementById("balance-amount");
     if (element) element.textContent = Number(soDu).toLocaleString();
+    const rutData = JSON.parse(localStorage.getItem("thanhCongRut"));
+if (rutData && rutData.soTien) {
+  fetch("../../Composite/E_Wallet/Alert_RutThanhCong.html")
+    .then(res => res.text())
+    .then(html => {
+      document.body.insertAdjacentHTML("beforeend", html);
+    });
+}
+
   };
 </script>
 
