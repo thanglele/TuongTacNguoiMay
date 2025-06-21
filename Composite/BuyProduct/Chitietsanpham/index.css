@@ -1149,3 +1149,28 @@
   	color: #000;
   	font-family: Roboto;
 }
+.weight-options {
+  display: flex;
+  gap: 12px;
+}
+
+.weight-btn input[type="radio"] {
+  display: none;
+}
+
+.weight-btn span {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.weight-btn input[type="radio"]:checked + span {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
