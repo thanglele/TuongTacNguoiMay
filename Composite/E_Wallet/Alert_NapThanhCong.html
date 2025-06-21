@@ -1,37 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet"/>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông báo nạp tiền</title>
     <link rel="stylesheet" href="../../css/E_Wallet/Alert_ThanhCong.css" />
-
-    <div class="alert-background">
-        <div class="alert">
-            <div>
-                <div class="icon-wrapper">
-                    <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
-                        <circle cx="32.5" cy="32.5" r="32.5" fill="#44FF00" fill-opacity="0.26"/>
-                    </svg>
-
-                    <svg id="chamthan" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
-                        <path d="M12.4372 16.5002L15.1455 19.2085L21.2393 13.1147M10.1808 5.42131C11.2693 5.33445 12.3027 4.90641 13.1339 4.19813C15.0734 2.54529 17.926 2.54529 19.8655 4.19813C20.6966 4.90641 21.73 5.33445 22.8185 5.42131C25.3587 5.62402 27.3758 7.64113 27.5785 10.1813C27.6654 11.2698 28.0934 12.3032 28.8017 13.1343C30.4546 15.0739 30.4546 17.9265 28.8017 19.866C28.0934 20.6971 27.6654 21.7305 27.5785 22.819C27.3758 25.3592 25.3587 27.3763 22.8185 27.579C21.73 27.6659 20.6966 28.0939 19.8655 28.8022C17.926 30.455 15.0734 30.455 13.1339 28.8022C12.3027 28.0939 11.2693 27.6659 10.1808 27.579C7.64064 27.3763 5.62353 25.3592 5.42082 22.819C5.33396 21.7305 4.90592 20.6971 4.19764 19.866C2.5448 17.9265 2.5448 15.0739 4.19764 13.1343C4.90592 12.3032 5.33396 11.2698 5.42082 10.1813C5.62353 7.64113 7.64064 5.62402 10.1808 5.42131Z" stroke="#00B508" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </div>
-
-            <div class="alert-content">
-                <p class="alert-title-sucess">Nạp thành công<br>500.000đ vào ví</p>
-                <!-- <p class="alert-text">Vui lòng kiểm tra lại số dư ví</p> -->
-            </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="alert-background" id="alertSuccess">
+      <div class="alert">
+        <div class="icon-wrapper">
+          <!-- Icon nền -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="65"
+            height="65"
+            viewBox="0 0 65 65"
+            fill="none"
+          >
+            <circle
+              cx="32.5"
+              cy="32.5"
+              r="32.5"
+              fill="#44FF00"
+              fill-opacity="0.26"
+            />
+          </svg>
+          <!-- Icon check -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="33"
+            height="33"
+            viewBox="0 0 33 33"
+            fill="none"
+          >
+            <path
+              d="M12.4372 16.5002L15.1455 19.2085L21.2393 13.1147M10.1808 5.42131C11.2693 5.33445..."
+              stroke="#00B508"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </div>
+        <div class="alert-content">
+          <p class="alert-title-sucess" id="thongBaoNap">Nạp thành công</p>
+        </div>
+      </div>
     </div>
 
-</body>
+    <script>
+      const data = JSON.parse(localStorage.getItem("pendingNapTien"));
+      if (data && data.soTien) {
+        document.getElementById(
+          "thongBaoNap"
+        ).innerHTML = `Nạp thành công<br>${Number(
+          data.soTien
+        ).toLocaleString()}đ vào ví`;
+
+        // Cộng vào số dư ví
+        const soDuCu = parseInt(localStorage.getItem("soDuVi") || "0", 10);
+        const soDuMoi = soDuCu + Number(data.soTien);
+        localStorage.setItem("soDuVi", soDuMoi.toString());
+
+        // Xoá dữ liệu tạm
+        localStorage.removeItem("pendingNapTien");
+      }
+
+      setTimeout(() => {
+        const alert = document.getElementById("alertSuccess");
+        if (alert) alert.remove();
+      }, 3000);
+    </script>
+  </body>
 </html>

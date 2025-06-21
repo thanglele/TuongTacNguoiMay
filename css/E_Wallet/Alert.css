@@ -1,124 +1,51 @@
+/* Reset body */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.alert-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-.alert-box {
-  background: white;
-  width: 400px;
-  border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  text-align: center;
-  padding: 30px 20px 24px;
-  position: relative;
-}
-
-.alert-close {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-  cursor: pointer;
-}
-
-.alert-icon .circle {
-  width: 56px;
-  height: 56px;
-  background: #FF2F00;
-  border-radius: 50%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.alert-icon .exclam {
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.alert-title {
-  font-size: 22px;
-  font-weight: 700;
-  margin-top: 20px;
-  color: #181D27;
-}
-
-.alert-message {
-  font-size: 16px;
-  margin: 8px 0 20px;
-  color: #333;
-}
-
-.alert-button {
-  background: #A6EB9A;
-  color: #000;
-  border: none;
-  border-radius: 999px;
-  padding: 10px 24px;
-  font-weight: 600;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.alert-button:hover {
-  background: #94de87;
-}
-/* Overlay của modal */
+/* Overlay che toàn màn hình */
 .alert-overlay {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* mờ nền */
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 1000;
+  align-items: center;
+  z-index: 9999;
 }
 
-/* Hộp alert */
+/* Hộp alert/modal chính */
 .alert-box {
   background-color: white;
-  border-radius: 10px;
-  padding: 30px;
-  max-width: 400px;
-  width: 90%;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 30px 24px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   position: relative;
   animation: fadeIn 0.3s ease;
+  text-align: center;
 }
 
-
+/* Nút đóng góc phải */
 .alert-close {
   position: absolute;
   top: 12px;
   right: 16px;
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bold;
   cursor: pointer;
   color: #777;
 }
 
+/* Icon tròn */
 .alert-icon .circle {
   width: 65px;
   height: 65px;
@@ -130,26 +57,30 @@ body {
   align-items: center;
 }
 
+/* Dấu chấm than hoặc icon */
 .alert-icon .exclam {
   font-size: 28px;
   font-weight: bold;
   color: #dc6803;
 }
 
+/* Tiêu đề */
 .alert-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
+/* Mô tả */
 .alert-message {
   font-size: 14px;
   margin-bottom: 16px;
   color: #333;
 }
 
+/* Nút chung */
 .alert-button {
-  padding: 8px 16px;
+  padding: 10px 20px;
   border-radius: 8px;
   font-weight: 600;
   border: none;
@@ -157,12 +88,25 @@ body {
   min-width: 90px;
 }
 
+/* Nút hủy */
 .alert-button-cancel {
   background: #f5f5f5;
   color: #333;
 }
 
+/* Nút xác nhận */
 .alert-button-confirm {
-  background: #90ee90;
+  background: #a6eb9a;
   color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

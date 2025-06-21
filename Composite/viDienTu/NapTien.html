@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
   <body>
     <div class="main-container">
       <div id="header"></div>
+
       <div class="breadcrumb-container">
         <div class="breadcrumb">
           <a href="../../index.html" class="link">Trang chủ</a>
@@ -20,22 +21,100 @@
           <span class="link current">Nạp tiền</span>
         </div>
       </div>
-      
+
+      <div class="nap-tien-container">
+        <h2 class="title">Nạp tiền vào ví</h2>
+
+        <div class="form-group">
+          <label for="phuong-thuc">Phương thức nạp</label>
+          <select id="phuong-thuc">
+            <option value="">Chọn ví hoặc tài khoản đã liên kết</option>
+            <option value="momo">Ví MoMo</option>
+            <option value="zalo">Ví ZaloPay</option>
+            <option value="bank">Tài khoản ngân hàng</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="so-tien">Số tiền:</label>
+          <input type="number" id="so-tien" placeholder="Nhập số tiền" />
+        </div>
+
+        <button class="submit-btn">Nạp tiền</button>
+      </div>
 
       <div id="footer"></div>
     </div>
 
+    <!-- Scripts -->
     <script>
-      // Load header.html
+      // Xử lý nạp tiền
+      document.querySelector(".submit-btn").addEventListener("click", () => {
+        const soTien = document.getElementById("so-tien").value.trim();
+        const phuongThuc = document.getElementById("phuong-thuc").value;
+
+        if (!phuongThuc || !soTien || Number(soTien) <= 0) {
+          alert("Vui lòng nhập số tiền hợp lệ và chọn phương thức nạp.");
+          return;
+        }
+
+        // Gọi file modal xác thực
+        fetch("../../Composite/E_Wallet/Alert_PassNapTien.html")
+          .then((res) => res.text())
+          .then((html) => {
+            if (!document.getElementById("alertModal")) {
+              document.body.insertAdjacentHTML("beforeend", html);
+
+              // Gắn lại function sau khi modal được chèn
+              setTimeout(() => {
+                window.xacNhanMatKhau = function () {
+                  const password =
+                    document.getElementById("passwordInput").value;
+                  if (password.trim() === "") {
+                    alert("Vui lòng nhập mật khẩu");
+                    return;
+                  }
+
+                  // Lưu tiền đang nạp
+                  localStorage.setItem(
+                    "pendingNapTien",
+                    JSON.stringify({ soTien, phuongThuc })
+                  );
+
+                  // Cộng tiền vào số dư ví
+                  let currentBalance =
+                    Number(localStorage.getItem("soDuVi")) || 0;
+                  currentBalance += Number(soTien);
+                  localStorage.setItem("soDuVi", currentBalance);
+
+                  // Đặt cờ thông báo
+                  localStorage.setItem("thanhCongNap", "true");
+
+                  closeAlert(); // đóng modal
+                  window.location.href = "./index.html"; // chuyển về trang chủ
+                };
+
+                window.closeAlert = function () {
+                  const alert = document.getElementById("alertModal");
+                  if (alert) alert.remove();
+                };
+              }, 100); // đợi DOM của modal render
+            }
+          })
+          .catch((err) => {
+            console.error("Không thể tải modal:", err);
+          });
+      });
+
+      // Tải header và footer
       fetch("../header.html")
-        .then((response) => response.text())
+        .then((res) => res.text())
         .then((data) => {
           document.getElementById("header").innerHTML = data;
         });
-    </script>
-    <script>
+
       fetch("../footer.html")
-        .then((response) => response.text())
+        .then((res) => res.text())
         .then((data) => {
           document.getElementById("footer").innerHTML = data;
         });

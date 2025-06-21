@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lịch sử giao dịch</title>
+  <link rel="stylesheet" href="../../css/styles_header.css" />
+  <link rel="stylesheet" href="../../css/styles_footer.css" />
+  <link rel="stylesheet" href="../../css/viDienTu/styles_LichSuGD.css" />
+</head>
+<body>
+  <div id="header"></div>
+
+  <div class="breadcrumb-container">
+    <div class="breadcrumb">
+      <a href="../../index.html" class="link">Trang chủ</a>
+      <span class="divider"> &gt; </span>
+      <a href="index.html" class="link">Ví điện tử</a>
+      <span class="divider"> &gt; </span>
+      <span class="link current">Lịch sử giao dịch</span>
+    </div>
+  </div>
+
+  <div class="history-container">
+    <h2>Lịch sử giao dịch ví điện tử</h2>
+    <table class="transaction-table">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Ngày giao dịch</th>
+          <th>Loại giao dịch</th>
+          <th>Số tiền</th>
+          <th>Trạng thái</th>
+          <th>Mô tả</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>30/05/2025</td>
+          <td>Nạp tiền</td>
+          <td class="plus">+200.000đ</td>
+          <td><span class="status success">Thành công</span></td>
+          <td>Nạp từ Momo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>29/05/2025</td>
+          <td>Thanh toán đơn hàng</td>
+          <td class="minus">−150.000đ</td>
+          <td><span class="status success">Thành công</span></td>
+          <td>Đơn hàng #SKY20250628A</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>28/05/2025</td>
+          <td>Nhận hoàn tiền</td>
+          <td class="plus">+50.000đ</td>
+          <td><span class="status success">Thành công</span></td>
+          <td>Hoàn đơn #SKY20250628A</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>27/05/2025</td>
+          <td>Rút tiền</td>
+          <td class="minus">−300.000đ</td>
+          <td><span class="status failed">Thất bại</span></td>
+          <td>Lỗi kết nối ngân hàng</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>25/05/2025</td>
+          <td>Rút tiền</td>
+          <td class="minus">−100.000đ</td>
+          <td><span class="status success">Thành công</span></td>
+          <td>Rút về Vietcombank</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>24/05/2025</td>
+          <td>Thanh toán đơn hàng</td>
+          <td class="minus">−120.000đ</td>
+          <td><span class="status success">Thành công</span></td>
+          <td>ViettelMoney</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch('../header.html').then(res => res.text()).then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+
+    fetch('../footer.html').then(res => res.text()).then(data => {
+      document.getElementById('footer').innerHTML = data;
+    });
+  </script>
+</body>
+</html>
